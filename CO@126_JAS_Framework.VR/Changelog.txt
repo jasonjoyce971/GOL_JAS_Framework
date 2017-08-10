@@ -1,0 +1,29 @@
+Added Batteries to AAC Ground Recon Marksman
+Enable Revive now enacted through ACE module PreInit.sqf -> automatically switched on for advanced medical
+Faction Extension:
+Overhauled:
+	CSAT - done
+	Russia - done
+	Takistani Army - done
+	NATO - done
+	BAF - done
+	USMC - done
+	AAF - done
+Removed:
+	BAF-W - BAF only wears MTP - done
+Added:
+	CSAT Vyper Group
+	Spetznaz
+	CTRG
+	22nd Special Air Service Regiment
+	Marine Special Operations Command
+	Army of the Czech Republic
+	601st Special Forces Group
+	Chernarus Defence Force
+	Tanoa Gendarmerie Special Weapons And Tactics
+	US Army
+	75th Ranger Regiment
+	Sahrani Liberation Army
+	Royal Army Corps of Sahrani
+	Syndikat Paramilitary Drug Cartel
+	United Nations
