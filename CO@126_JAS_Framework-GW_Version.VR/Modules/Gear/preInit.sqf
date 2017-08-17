@@ -30,6 +30,7 @@ PREP(replaceAttachments);
 			"BAF-D",
 			"USMC-D",
 			"USMC-W",
+			"SWAT",
 			"INSURGENT-D",
 			"INSURGENT-W",
 			"CAMPAIGN-W"
@@ -40,6 +41,7 @@ PREP(replaceAttachments);
 			"BAF-Desert",
 			"USMC-Desert",
 			"USMC-Woodland",
+			"Tanoa SWAT",
 			"INSURGENT-Desert",
 			"INSURGENT-Woodland",
 			"Campaign-"
@@ -58,6 +60,7 @@ PREP(replaceAttachments);
 			"CSAT-H",
 			"CSAT-W",
 			"CSAT-U",
+			"CSAT-V",
 			"RUSSIAN-W",
 			"TAKIARMY-D",
 			"INSURGENT-D",
@@ -68,6 +71,7 @@ PREP(replaceAttachments);
 			"CSAT-Hex",
 			"CSAT-Woodland",
 			"CSAT-Urban",
+			"CSAT-Vyper Team",
 			"Russian-Woodland",
 			"Takistani Army-Desert",
 			"INSURGENT-Desert",

@@ -12,7 +12,7 @@ Overhauled:
 Removed:
 	BAF-W - BAF only wears MTP - done
 Added:
-	CSAT Vyper Group
+	CSAT Vyper Group - done
 	Spetznaz
 	CTRG
 	22nd Special Air Service Regiment
@@ -20,10 +20,339 @@ Added:
 	Army of the Czech Republic
 	601st Special Forces Group
 	Chernarus Defence Force
-	Tanoa Gendarmerie Special Weapons And Tactics
+	Tanoa Gendarmerie Special Weapons And Tactics - Done
 	US Army
 	75th Ranger Regiment
 	Sahrani Liberation Army
 	Royal Army Corps of Sahrani
 	Syndikat Paramilitary Drug Cartel
 	United Nations
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+
+SL/FTL/JTAC/FAC/GREN
+
+comment "Exported from Arsenal by Jason";
+
+comment "Remove existing items";
+removeAllWeapons this;
+removeAllItems this;
+removeAllAssignedItems this;
+removeUniform this;
+removeVest this;
+removeBackpack this;
+removeHeadgear this;
+removeGoggles this;
+
+comment "Add containers";
+this forceAddUniform "U_O_V_Soldier_Viper_F";
+for "_i" from 1 to 6 do {this addItemToUniform "ACE_fieldDressing";};
+for "_i" from 1 to 3 do {this addItemToUniform "ACE_morphine";};
+this addVest "V_HarnessOGL_ghex_F";
+for "_i" from 1 to 5 do {this addItemToVest "30Rnd_580x42_Mag_F";};
+for "_i" from 1 to 5 do {this addItemToVest "30Rnd_580x42_Mag_Tracer_F";};
+for "_i" from 1 to 5 do {this addItemToVest "16Rnd_9x21_Mag";};
+this addBackpack "B_ViperHarness_ghex_F";
+for "_i" from 1 to 2 do {this addItemToBackpack "ClaymoreDirectionalMine_Remote_Mag";};
+for "_i" from 1 to 5 do {this addItemToBackpack "30Rnd_580x42_Mag_F";};
+this addHeadgear "H_HelmetO_ViperSP_ghex_F";
+
+comment "Add weapons";
+this addWeapon "arifle_CTAR_GL_ghex_F";
+this addPrimaryWeaponItem "muzzle_snds_58_ghex_F";
+this addPrimaryWeaponItem "acc_pointer_IR";
+this addWeapon "hgun_Rook40_F";
+this addHandgunItem "muzzle_snds_L";
+
+comment "Add items";
+this linkItem "ItemMap";
+this linkItem "ItemCompass";
+this linkItem "tf_microdagr";
+this linkItem "tf_anprc148jem_1";
+
+comment "Set identity";
+this setFace "WhiteHead_17";
+this setSpeaker "ace_novoice";
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////
+
+AT
+
+comment "Exported from Arsenal by Jason";
+
+comment "Remove existing items";
+removeAllWeapons this;
+removeAllItems this;
+removeAllAssignedItems this;
+removeUniform this;
+removeVest this;
+removeBackpack this;
+removeHeadgear this;
+removeGoggles this;
+
+comment "Add containers";
+this forceAddUniform "U_O_V_Soldier_Viper_F";
+for "_i" from 1 to 6 do {this addItemToUniform "ACE_fieldDressing";};
+for "_i" from 1 to 3 do {this addItemToUniform "ACE_morphine";};
+this addVest "V_HarnessO_ghex_F";
+for "_i" from 1 to 5 do {this addItemToVest "16Rnd_9x21_Mag";};
+for "_i" from 1 to 5 do {this addItemToVest "30Rnd_580x42_Mag_F";};
+for "_i" from 1 to 5 do {this addItemToVest "30Rnd_580x42_Mag_Tracer_F";};
+this addBackpack "B_ViperHarness_ghex_F";
+for "_i" from 1 to 2 do {this addItemToBackpack "ClaymoreDirectionalMine_Remote_Mag";};
+this addItemToBackpack "RPG32_F";
+this addItemToBackpack "RPG32_HE_F";
+this addHeadgear "H_HelmetO_ViperSP_ghex_F";
+
+comment "Add weapons";
+this addWeapon "arifle_CTAR_ghex_F";
+this addPrimaryWeaponItem "muzzle_snds_58_ghex_F";
+this addPrimaryWeaponItem "acc_pointer_IR";
+this addWeapon "launch_RPG32_ghex_F";
+this addWeapon "hgun_Rook40_F";
+this addHandgunItem "muzzle_snds_L";
+
+comment "Add items";
+this linkItem "ItemMap";
+this linkItem "ItemCompass";
+this linkItem "tf_microdagr";
+this linkItem "tf_anprc148jem_1";
+
+comment "Set identity";
+this setFace "WhiteHead_17";
+this setSpeaker "ace_novoice";
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+
+AG/AR
+
+comment "Exported from Arsenal by Jason";
+
+comment "Remove existing items";
+removeAllWeapons this;
+removeAllItems this;
+removeAllAssignedItems this;
+removeUniform this;
+removeVest this;
+removeBackpack this;
+removeHeadgear this;
+removeGoggles this;
+
+comment "Add containers";
+this forceAddUniform "U_O_V_Soldier_Viper_F";
+for "_i" from 1 to 6 do {this addItemToUniform "ACE_fieldDressing";};
+for "_i" from 1 to 3 do {this addItemToUniform "ACE_morphine";};
+this addVest "V_HarnessO_ghex_F";
+for "_i" from 1 to 5 do {this addItemToVest "16Rnd_9x21_Mag";};
+for "_i" from 1 to 3 do {this addItemToVest "100Rnd_580x42_Mag_F";};
+this addBackpack "B_Carryall_ghex_F";
+for "_i" from 1 to 2 do {this addItemToBackpack "ClaymoreDirectionalMine_Remote_Mag";};
+for "_i" from 1 to 5 do {this addItemToBackpack "100Rnd_580x42_Mag_F";};
+for "_i" from 1 to 5 do {this addItemToBackpack "100Rnd_580x42_Mag_Tracer_F";};
+this addHeadgear "H_HelmetO_ViperSP_ghex_F";
+
+comment "Add weapons";
+this addWeapon "arifle_CTARS_ghex_F";
+this addPrimaryWeaponItem "muzzle_snds_58_ghex_F";
+this addPrimaryWeaponItem "acc_pointer_IR";
+this addWeapon "hgun_Rook40_F";
+this addHandgunItem "muzzle_snds_L";
+
+comment "Add items";
+this linkItem "ItemMap";
+this linkItem "ItemCompass";
+this linkItem "tf_microdagr";
+this linkItem "tf_anprc148jem_1";
+
+comment "Set identity";
+this setFace "WhiteHead_17";
+this setSpeaker "ace_novoice";
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+
+MAT/MMG
+
+comment "Exported from Arsenal by Jason";
+
+comment "Remove existing items";
+removeAllWeapons this;
+removeAllItems this;
+removeAllAssignedItems this;
+removeUniform this;
+removeVest this;
+removeBackpack this;
+removeHeadgear this;
+removeGoggles this;
+
+comment "Add containers";
+this forceAddUniform "U_O_V_Soldier_Viper_F";
+for "_i" from 1 to 6 do {this addItemToUniform "ACE_fieldDressing";};
+for "_i" from 1 to 3 do {this addItemToUniform "ACE_morphine";};
+this addVest "V_HarnessO_ghex_F";
+for "_i" from 1 to 5 do {this addItemToVest "16Rnd_9x21_Mag";};
+this addBackpack "B_Bergen_hex_F";
+for "_i" from 1 to 2 do {this addItemToBackpack "ClaymoreDirectionalMine_Remote_Mag";};
+for "_i" from 1 to 3 do {this addItemToBackpack "150Rnd_93x64_Mag";};
+this addItemToBackpack "Titan_AT";
+this addItemToBackpack "Titan_AP";
+this addHeadgear "H_HelmetO_ViperSP_ghex_F";
+
+comment "Add weapons";
+this addWeapon "MMG_01_hex_F";
+this addPrimaryWeaponItem "muzzle_snds_93mmg";
+this addPrimaryWeaponItem "acc_pointer_IR";
+this addPrimaryWeaponItem "bipod_02_F_hex";
+this addWeapon "launch_O_Titan_short_ghex_F";
+this addWeapon "hgun_Rook40_F";
+this addHandgunItem "muzzle_snds_L";
+
+comment "Add items";
+this linkItem "ItemMap";
+this linkItem "ItemCompass";
+this linkItem "tf_microdagr";
+this linkItem "tf_anprc148jem_1";
+
+comment "Set identity";
+this setFace "WhiteHead_17";
+this setSpeaker "ace_novoice";
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////
+
+Jaeger
+
+comment "Exported from Arsenal by Jason";
+
+comment "Remove existing items";
+removeAllWeapons this;
+removeAllItems this;
+removeAllAssignedItems this;
+removeUniform this;
+removeVest this;
+removeBackpack this;
+removeHeadgear this;
+removeGoggles this;
+
+comment "Add containers";
+this forceAddUniform "U_O_V_Soldier_Viper_F";
+for "_i" from 1 to 6 do {this addItemToUniform "ACE_fieldDressing";};
+for "_i" from 1 to 3 do {this addItemToUniform "ACE_morphine";};
+this addItemToUniform "ACE_RangeCard";
+this addVest "V_HarnessO_ghex_F";
+for "_i" from 1 to 5 do {this addItemToVest "16Rnd_9x21_Mag";};
+for "_i" from 1 to 3 do {this addItemToVest "10Rnd_93x64_DMR_05_Mag";};
+this addBackpack "B_Bergen_hex_F";
+for "_i" from 1 to 2 do {this addItemToBackpack "ClaymoreDirectionalMine_Remote_Mag";};
+for "_i" from 1 to 10 do {this addItemToBackpack "10Rnd_93x64_DMR_05_Mag";};
+this addHeadgear "H_HelmetO_ViperSP_ghex_F";
+
+comment "Add weapons";
+this addWeapon "srifle_DMR_05_hex_F";
+this addPrimaryWeaponItem "muzzle_snds_93mmg";
+this addPrimaryWeaponItem "acc_pointer_IR";
+this addPrimaryWeaponItem "optic_KHS_hex";
+this addPrimaryWeaponItem "bipod_02_F_hex";
+this addWeapon "hgun_Rook40_F";
+this addHandgunItem "muzzle_snds_L";
+
+comment "Add items";
+this linkItem "ItemMap";
+this linkItem "ItemCompass";
+this linkItem "tf_microdagr";
+this linkItem "tf_anprc148jem_1";
+
+comment "Set identity";
+this setFace "WhiteHead_17";
+this setSpeaker "ace_novoice";
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+
+chopper pilot
+
+comment "Exported from Arsenal by Jason";
+
+comment "Remove existing items";
+removeAllWeapons this;
+removeAllItems this;
+removeAllAssignedItems this;
+removeUniform this;
+removeVest this;
+removeBackpack this;
+removeHeadgear this;
+removeGoggles this;
+
+comment "Add containers";
+this forceAddUniform "U_O_V_Soldier_Viper_F";
+for "_i" from 1 to 6 do {this addItemToUniform "ACE_fieldDressing";};
+for "_i" from 1 to 3 do {this addItemToUniform "ACE_morphine";};
+this addItemToUniform "ACE_RangeCard";
+this addVest "V_HarnessO_ghex_F";
+for "_i" from 1 to 4 do {this addItemToVest "16Rnd_9x21_Mag";};
+for "_i" from 1 to 2 do {this addItemToVest "30Rnd_65x39_caseless_green";};
+this addBackpack "tf_mr3000_bwmod";
+for "_i" from 1 to 2 do {this addItemToBackpack "ClaymoreDirectionalMine_Remote_Mag";};
+for "_i" from 1 to 5 do {this addItemToBackpack "30Rnd_65x39_caseless_green";};
+for "_i" from 1 to 5 do {this addItemToBackpack "30Rnd_65x39_caseless_green_mag_Tracer";};
+this addItemToBackpack "10Rnd_50BW_Mag_F";
+this addHeadgear "H_PilotHelmetHeli_O";
+
+comment "Add weapons";
+this addWeapon "arifle_ARX_ghex_F";
+this addPrimaryWeaponItem "acc_pointer_IR";
+this addPrimaryWeaponItem "optic_ACO_grn";
+this addWeapon "hgun_Rook40_F";
+this addHandgunItem "muzzle_snds_L";
+
+comment "Add items";
+this linkItem "ItemMap";
+this linkItem "ItemCompass";
+this linkItem "tf_microdagr";
+this linkItem "tf_anprc148jem_1";
+
+comment "Set identity";
+this setFace "WhiteHead_17";
+this setSpeaker "ace_novoice";
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////
+
+jet pilot
+
+comment "Exported from Arsenal by Jason";
+
+comment "Remove existing items";
+removeAllWeapons this;
+removeAllItems this;
+removeAllAssignedItems this;
+removeUniform this;
+removeVest this;
+removeBackpack this;
+removeHeadgear this;
+removeGoggles this;
+
+comment "Add containers";
+this forceAddUniform "U_O_PilotCoveralls";
+for "_i" from 1 to 6 do {this addItemToUniform "ACE_fieldDressing";};
+for "_i" from 1 to 3 do {this addItemToUniform "ACE_morphine";};
+this addItemToUniform "ACE_RangeCard";
+this addVest "V_Rangemaster_belt";
+for "_i" from 1 to 5 do {this addItemToVest "16Rnd_9x21_Mag";};
+this addBackpack "B_Parachute";
+this addHeadgear "H_PilotHelmetFighter_O";
+
+comment "Add weapons";
+this addWeapon "hgun_Rook40_F";
+this addHandgunItem "muzzle_snds_L";
+
+comment "Add items";
+this linkItem "ItemMap";
+this linkItem "ItemCompass";
+this linkItem "tf_microdagr";
+this linkItem "tf_anprc148jem_1";
+
+comment "Set identity";
+this setFace "WhiteHead_17";
+this setSpeaker "ace_novoice";
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+

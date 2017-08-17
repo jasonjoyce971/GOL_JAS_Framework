@@ -141,17 +141,17 @@ switch (toLower(_role)) do {
 
 	case "p": {
 		[_goggles,_helmet,_uniform,_vest,_backpackRadio] call _addEquipment;
-		[_rifleC, _rifleC_mag_tr, ""] call _addPrimary;
+		[_rifleC, _rifleC_mag_tr, _rifleC_mag] call _addPrimary;
 		[_pistol, _pistol_mag, ""] call _addHandGun;
 		_IFAK call _addToUniform;
 		[[_smokegrenadeY,2],[_smokegrenadeP,3],[_grenademini,1]] call _addToUniform;
-		[[_rifleC_mag_tr,2]] call _addToVest;
+		[[_rifleC_mag_tr,2],[_rifleC_mag,2]] call _addToVest;
 		_FAKBig call _addToBackpack;
 		[_map, _gps, "", _compass, _watch, _nvg] call _addLinkedItems;
 	};
 
 	case "crew": {
-		[_goggles,_helmet,_uniform,_vest] call _addEquipment;
+		[_goggles,_helmet,_uniform,_vest,_backpack] call _addEquipment;
 		[_pistol, _pistol_mag, ""] call _addHandGun;
 		_IFAK call _addToUniform;
 		[[_pistol_mag,2],[_smokegrenadeY,2]] call _addToUniform;
