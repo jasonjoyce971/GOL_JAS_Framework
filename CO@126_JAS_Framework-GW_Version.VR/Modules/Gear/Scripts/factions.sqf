@@ -51,6 +51,16 @@ switch (_side) do {
 	case "USMC-W": {
 		#include "Classes\USMC-W.sqf"
 	};
+	
+	case "CSAT-V":
+	{
+		#include "Classes\CSAT-V.sqf"
+	};
+	case "SWAT":
+	{
+		#include "Classes\SWAT.sqf"
+	};
+	
 	default {
 		_errorCode = true;
 		ERROR(FORMAT_1("Faction does not exist: %1", _side));
