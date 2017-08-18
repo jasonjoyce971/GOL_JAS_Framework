@@ -60,6 +60,34 @@ switch (_side) do {
 	{
 		#include "Classes\SWAT.sqf"
 	};
+	case "SPETSNAZ":
+	{
+		#include "Classes\Spetsnaz.sqf"
+	};
+	case "NATO-CTRG":
+	{
+		#include "Classes\CTRG.sqf"
+	};
+	case "SAS":
+	{
+		#include "Classes\SAS.sqf"
+	};
+	case "MARSOC":
+	{
+		#include "Classes\MARSOC.sqf"
+	};
+	case "ACR":
+	{
+		#include "Classes\ACR.sqf"
+	};
+	case "601stSFG":
+	{
+		#include "Classes\601stSFG.sqf";
+	};
+	case "CDF-D":
+	{
+		#include "Classes\CDF-D.sqf";
+	};
 	
 	default {
 		_errorCode = true;
