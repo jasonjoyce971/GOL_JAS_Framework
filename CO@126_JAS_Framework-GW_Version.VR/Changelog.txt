@@ -1,32 +1,7 @@
 Added Batteries to AAC Ground Recon Marksman
 Enable Revive now enacted through ACE module PreInit.sqf -> automatically switched on for advanced medical
-Faction Extension:
-Overhauled:
-	CSAT - done
-	Russia - done
-	Takistani Army - done
-	NATO - done
-	BAF - done
-	USMC - done
-	AAF - done
-Removed:
-	BAF-W - BAF only wears MTP - done
-Added:
-	CSAT Vyper Group - done
-	Spetznaz
-	CTRG
-	22nd Special Air Service Regiment
-	Marine Special Operations Command
-	Army of the Czech Republic
-	601st Special Forces Group
-	Chernarus Defence Force
-	Tanoa Gendarmerie Special Weapons And Tactics - Done
-	US Army
-	75th Ranger Regiment
-	Sahrani Liberation Army
-	Royal Army Corps of Sahrani
-	Syndikat Paramilitary Drug Cartel
-	United Nations
+Faction Extension
+
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -45,26 +20,20 @@ removeHeadgear this;
 removeGoggles this;
 
 comment "Add containers";
-this forceAddUniform "CUP_U_B_CDF_DST_1";
-for "_i" from 1 to 4 do {this addItemToUniform "ACE_fieldDressing";};
-for "_i" from 1 to 2 do {this addItemToUniform "ACE_morphine";};
-for "_i" from 1 to 2 do {this addItemToUniform "CUP_6Rnd_45ACP_M";};
+this forceAddUniform "CUP_U_B_CDF_FST_2";
+for "_i" from 1 to 6 do {this addItemToUniform "ACE_fieldDressing";};
+for "_i" from 1 to 3 do {this addItemToUniform "ACE_morphine";};
 this addItemToUniform "CUP_30Rnd_545x39_AK_M";
-this addVest "CUP_V_CDF_6B3_4_DST";
-for "_i" from 1 to 2 do {this addItemToVest "HandGrenade";};
-this addItemToVest "SmokeShell";
-this addItemToVest "SmokeShellGreen";
-for "_i" from 1 to 2 do {this addItemToVest "CUP_30Rnd_545x39_AK_M";};
-this addItemToVest "CUP_6Rnd_45ACP_M";
-this addBackpack "B_Kitbag_cbr";
-for "_i" from 1 to 5 do {this addItemToBackpack "CUP_30Rnd_545x39_AK_M";};
-for "_i" from 1 to 5 do {this addItemToBackpack "CUP_30Rnd_TE1_Red_Tracer_545x39_AK_M";};
-for "_i" from 1 to 3 do {this addItemToBackpack "CUP_6Rnd_45ACP_M";};
-this addHeadgear "CUP_H_CDF_H_PASGT_DST";
+this addVest "CUP_V_CDF_6B3_2_FST";
+this addBackpack "B_Kitbag_rgr";
+for "_i" from 1 to 2 do {this addItemToBackpack "CUP_30Rnd_545x39_AK_M";};
+for "_i" from 1 to 2 do {this addItemToBackpack "CUP_30Rnd_TE1_Green_Tracer_545x39_AK_M";};
+for "_i" from 1 to 2 do {this addItemToBackpack "10Rnd_9x21_Mag";};
+this addHeadgear "CUP_H_CDF_OfficerCap_UN";
 
 comment "Add weapons";
-this addWeapon "CUP_arifle_AK74_GL";
-this addWeapon "CUP_hgun_TaurusTracker455";
+this addWeapon "CUP_arifle_AK107_GL";
+this addWeapon "hgun_Pistol_01_F";
 this addWeapon "Binocular";
 
 comment "Add items";
@@ -72,8 +41,6 @@ this linkItem "ItemMap";
 this linkItem "ItemCompass";
 this linkItem "tf_microdagr";
 this linkItem "tf_anprc148jem_1";
-this linkItem "B_UavTerminal";
-this linkItem "NVGoggles";
 
 comment "Set identity";
 this setFace "WhiteHead_17";
@@ -96,29 +63,22 @@ removeHeadgear this;
 removeGoggles this;
 
 comment "Add containers";
-this forceAddUniform "CUP_U_B_CDF_DST_2";
-for "_i" from 1 to 4 do {this addItemToUniform "ACE_fieldDressing";};
-for "_i" from 1 to 2 do {this addItemToUniform "ACE_morphine";};
-for "_i" from 1 to 2 do {this addItemToUniform "CUP_6Rnd_45ACP_M";};
-this addVest "CUP_V_CDF_6B3_1_DST";
-for "_i" from 1 to 2 do {this addItemToVest "HandGrenade";};
-this addItemToVest "SmokeShell";
-this addItemToVest "SmokeShellGreen";
-this addItemToVest "CUP_6Rnd_45ACP_M";
-for "_i" from 1 to 3 do {this addItemToVest "CUP_30Rnd_545x39_AK_M";};
-this addBackpack "B_Carryall_cbr";
-for "_i" from 1 to 3 do {this addItemToBackpack "CUP_6Rnd_45ACP_M";};
-for "_i" from 1 to 2 do {this addItemToBackpack "CUP_30Rnd_545x39_AK_M";};
-for "_i" from 1 to 2 do {this addItemToBackpack "CUP_30Rnd_TE1_Red_Tracer_545x39_AK_M";};
+this forceAddUniform "CUP_U_B_CDF_FST_2";
+for "_i" from 1 to 6 do {this addItemToUniform "ACE_fieldDressing";};
+for "_i" from 1 to 3 do {this addItemToUniform "ACE_morphine";};
+this addItemToUniform "CUP_30Rnd_545x39_AK_M";
+this addVest "CUP_V_CDF_6B3_2_FST";
+for "_i" from 1 to 2 do {this addItemToVest "CUP_30Rnd_545x39_AK_M";};
+this addBackpack "B_Kitbag_rgr";
+for "_i" from 1 to 2 do {this addItemToBackpack "10Rnd_9x21_Mag";};
 this addItemToBackpack "CUP_PG7VR_M";
 this addItemToBackpack "CUP_TBG7V_M";
-this addHeadgear "CUP_H_CDF_H_PASGT_DST";
+this addHeadgear "CUP_H_CDF_Beret_UN";
 
 comment "Add weapons";
-this addWeapon "CUP_arifle_AK74";
+this addWeapon "CUP_arifle_AK107";
 this addWeapon "CUP_launch_RPG7V";
-this addSecondaryWeaponItem "CUP_acc_rpg7_zero_50";
-this addWeapon "CUP_hgun_TaurusTracker455";
+this addWeapon "hgun_Pistol_01_F";
 this addWeapon "Binocular";
 
 comment "Add items";
@@ -126,8 +86,6 @@ this linkItem "ItemMap";
 this linkItem "ItemCompass";
 this linkItem "tf_microdagr";
 this linkItem "tf_anprc148jem_1";
-this linkItem "B_UavTerminal";
-this linkItem "NVGoggles";
 
 comment "Set identity";
 this setFace "WhiteHead_17";
@@ -150,24 +108,19 @@ removeHeadgear this;
 removeGoggles this;
 
 comment "Add containers";
-this forceAddUniform "CUP_U_B_CDF_DST_2";
-for "_i" from 1 to 4 do {this addItemToUniform "ACE_fieldDressing";};
-for "_i" from 1 to 2 do {this addItemToUniform "ACE_morphine";};
-for "_i" from 1 to 2 do {this addItemToUniform "CUP_6Rnd_45ACP_M";};
-this addVest "CUP_V_CDF_6B3_1_DST";
-for "_i" from 1 to 2 do {this addItemToVest "HandGrenade";};
-this addItemToVest "SmokeShell";
-this addItemToVest "SmokeShellGreen";
-this addItemToVest "CUP_6Rnd_45ACP_M";
+this forceAddUniform "CUP_U_B_CDF_FST_2";
+for "_i" from 1 to 6 do {this addItemToUniform "ACE_fieldDressing";};
+for "_i" from 1 to 3 do {this addItemToUniform "ACE_morphine";};
+this addVest "CUP_V_CDF_6B3_2_FST";
 for "_i" from 1 to 3 do {this addItemToVest "CUP_45Rnd_TE4_LRT4_Green_Tracer_545x39_RPK_M";};
-this addBackpack "B_Carryall_cbr";
-for "_i" from 1 to 3 do {this addItemToBackpack "CUP_6Rnd_45ACP_M";};
-for "_i" from 1 to 2 do {this addItemToBackpack "CUP_75Rnd_TE4_LRT4_Green_Tracer_545x39_RPK_M";};
-this addHeadgear "CUP_H_CDF_H_PASGT_DST";
+this addBackpack "B_Carryall_oli";
+for "_i" from 1 to 2 do {this addItemToBackpack "10Rnd_9x21_Mag";};
+for "_i" from 1 to 3 do {this addItemToBackpack "CUP_75Rnd_TE4_LRT4_Green_Tracer_545x39_RPK_M";};
+this addHeadgear "CUP_H_CDF_H_PASGT_UN";
 
 comment "Add weapons";
-this addWeapon "CUP_arifle_RPK74";
-this addWeapon "CUP_hgun_TaurusTracker455";
+this addWeapon "CUP_arifle_RPK74M";
+this addWeapon "hgun_Pistol_01_F";
 this addWeapon "Binocular";
 
 comment "Add items";
@@ -175,7 +128,6 @@ this linkItem "ItemMap";
 this linkItem "ItemCompass";
 this linkItem "tf_microdagr";
 this linkItem "tf_anprc148jem_1";
-this linkItem "B_UavTerminal";
 
 comment "Set identity";
 this setFace "WhiteHead_17";
@@ -198,25 +150,21 @@ removeHeadgear this;
 removeGoggles this;
 
 comment "Add containers";
-this forceAddUniform "CUP_U_B_CDF_DST_2";
-for "_i" from 1 to 4 do {this addItemToUniform "ACE_fieldDressing";};
-for "_i" from 1 to 2 do {this addItemToUniform "ACE_morphine";};
-for "_i" from 1 to 2 do {this addItemToUniform "CUP_6Rnd_45ACP_M";};
-this addVest "CUP_V_CDF_6B3_3_DST";
-for "_i" from 1 to 2 do {this addItemToVest "HandGrenade";};
-this addItemToVest "SmokeShell";
-this addItemToVest "SmokeShellGreen";
-this addItemToVest "CUP_6Rnd_45ACP_M";
-this addBackpack "B_Bergen_mcamo_F";
-for "_i" from 1 to 3 do {this addItemToBackpack "CUP_6Rnd_45ACP_M";};
-this addItemToBackpack "CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Red_M";
+this forceAddUniform "CUP_U_B_CDF_FST_2";
+for "_i" from 1 to 6 do {this addItemToUniform "ACE_fieldDressing";};
+for "_i" from 1 to 3 do {this addItemToUniform "ACE_morphine";};
+this addVest "CUP_V_CDF_6B3_2_FST";
+this addItemToVest "CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Green_M";
+this addBackpack "B_Bergen_dgtl_F";
+for "_i" from 1 to 2 do {this addItemToBackpack "10Rnd_9x21_Mag";};
+for "_i" from 1 to 2 do {this addItemToBackpack "CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Green_M";};
 this addItemToBackpack "CUP_AT13_M";
-this addHeadgear "CUP_H_CDF_H_PASGT_DST";
+this addHeadgear "CUP_H_CDF_H_PASGT_UN";
 
 comment "Add weapons";
 this addWeapon "CUP_lmg_Pecheneg";
 this addWeapon "CUP_launch_Metis";
-this addWeapon "CUP_hgun_TaurusTracker455";
+this addWeapon "hgun_Pistol_01_F";
 this addWeapon "Binocular";
 
 comment "Add items";
@@ -224,7 +172,6 @@ this linkItem "ItemMap";
 this linkItem "ItemCompass";
 this linkItem "tf_microdagr";
 this linkItem "tf_anprc148jem_1";
-this linkItem "B_UavTerminal";
 
 comment "Set identity";
 this setFace "WhiteHead_17";
@@ -247,27 +194,20 @@ removeHeadgear this;
 removeGoggles this;
 
 comment "Add containers";
-this forceAddUniform "CUP_U_B_CDF_DST_2";
-for "_i" from 1 to 4 do {this addItemToUniform "ACE_fieldDressing";};
-for "_i" from 1 to 2 do {this addItemToUniform "ACE_morphine";};
-this addItemToUniform "ACE_RangeCard";
-for "_i" from 1 to 2 do {this addItemToUniform "CUP_6Rnd_45ACP_M";};
-for "_i" from 1 to 2 do {this addItemToUniform "CUP_10Rnd_762x54_SVD_M";};
-this addVest "CUP_V_CDF_6B3_5_DST";
-for "_i" from 1 to 2 do {this addItemToVest "HandGrenade";};
-this addItemToVest "SmokeShell";
-this addItemToVest "SmokeShellGreen";
-this addItemToVest "CUP_6Rnd_45ACP_M";
-this addItemToVest "CUP_10Rnd_762x54_SVD_M";
-this addBackpack "B_Bergen_mcamo_F";
-for "_i" from 1 to 3 do {this addItemToBackpack "CUP_6Rnd_45ACP_M";};
-for "_i" from 1 to 20 do {this addItemToBackpack "CUP_10Rnd_762x54_SVD_M";};
-this addHeadgear "CUP_H_CDF_H_PASGT_DST";
+this forceAddUniform "CUP_U_B_CDF_FST_2";
+for "_i" from 1 to 6 do {this addItemToUniform "ACE_fieldDressing";};
+for "_i" from 1 to 3 do {this addItemToUniform "ACE_morphine";};
+for "_i" from 1 to 3 do {this addItemToUniform "CUP_10Rnd_762x54_SVD_M";};
+this addVest "CUP_V_CDF_6B3_2_FST";
+this addBackpack "B_Bergen_dgtl_F";
+for "_i" from 1 to 2 do {this addItemToBackpack "10Rnd_9x21_Mag";};
+for "_i" from 1 to 3 do {this addItemToBackpack "CUP_10Rnd_762x54_SVD_M";};
+this addHeadgear "CUP_H_CDF_H_PASGT_UN";
 
 comment "Add weapons";
-this addWeapon "CUP_srifle_SVD_des";
+this addWeapon "CUP_srifle_SVD";
 this addPrimaryWeaponItem "CUP_optic_PSO_3";
-this addWeapon "CUP_hgun_TaurusTracker455";
+this addWeapon "hgun_Pistol_01_F";
 this addWeapon "Binocular";
 
 comment "Add items";
@@ -275,7 +215,6 @@ this linkItem "ItemMap";
 this linkItem "ItemCompass";
 this linkItem "tf_microdagr";
 this linkItem "tf_anprc148jem_1";
-this linkItem "B_UavTerminal";
 
 comment "Set identity";
 this setFace "WhiteHead_17";
@@ -298,25 +237,21 @@ removeHeadgear this;
 removeGoggles this;
 
 comment "Add containers";
-this forceAddUniform "CUP_U_B_CDF_DST_2";
-for "_i" from 1 to 4 do {this addItemToUniform "ACE_fieldDressing";};
-for "_i" from 1 to 2 do {this addItemToUniform "ACE_morphine";};
-this addItemToUniform "ACE_RangeCard";
-for "_i" from 1 to 2 do {this addItemToUniform "CUP_6Rnd_45ACP_M";};
-this addVest "CUP_V_CDF_6B3_5_DST";
-for "_i" from 1 to 2 do {this addItemToVest "HandGrenade";};
-this addItemToVest "SmokeShell";
-this addItemToVest "SmokeShellGreen";
-this addItemToVest "CUP_6Rnd_45ACP_M";
-for "_i" from 1 to 3 do {this addItemToVest "CUP_30Rnd_762x39_AK47_M";};
-this addBackpack "tf_rt1523g_big";
-for "_i" from 1 to 3 do {this addItemToBackpack "CUP_6Rnd_45ACP_M";};
-for "_i" from 1 to 5 do {this addItemToBackpack "CUP_30Rnd_762x39_AK47_M";};
-this addHeadgear "CUP_H_TK_PilotHelmet";
+this forceAddUniform "CUP_U_B_CDF_FST_2";
+for "_i" from 1 to 6 do {this addItemToUniform "ACE_fieldDressing";};
+for "_i" from 1 to 3 do {this addItemToUniform "ACE_morphine";};
+this addItemToUniform "CUP_30Rnd_545x39_AK_M";
+this addVest "CUP_V_CDF_6B3_2_FST";
+for "_i" from 1 to 2 do {this addItemToVest "CUP_30Rnd_545x39_AK_M";};
+this addBackpack "tf_anprc155";
+for "_i" from 1 to 2 do {this addItemToBackpack "10Rnd_9x21_Mag";};
+for "_i" from 1 to 2 do {this addItemToBackpack "CUP_30Rnd_545x39_AK_M";};
+for "_i" from 1 to 2 do {this addItemToBackpack "CUP_30Rnd_TE1_Red_Tracer_545x39_AK_M";};
+this addHeadgear "CUP_H_BAF_Helmet_Pilot";
 
 comment "Add weapons";
-this addWeapon "CUP_arifle_AKS";
-this addWeapon "CUP_hgun_TaurusTracker455";
+this addWeapon "CUP_arifle_AKS74U";
+this addWeapon "hgun_Pistol_01_F";
 this addWeapon "Binocular";
 
 comment "Add items";
@@ -324,7 +259,6 @@ this linkItem "ItemMap";
 this linkItem "ItemCompass";
 this linkItem "tf_microdagr";
 this linkItem "tf_anprc148jem_1";
-this linkItem "B_UavTerminal";
 
 comment "Set identity";
 this setFace "WhiteHead_17";
@@ -347,21 +281,17 @@ removeHeadgear this;
 removeGoggles this;
 
 comment "Add containers";
-this forceAddUniform "U_I_pilotCoveralls";
-for "_i" from 1 to 2 do {this addItemToUniform "ACE_fieldDressing";};
-this addItemToUniform "ACE_morphine";
-this addItemToUniform "ACE_RangeCard";
-this addItemToUniform "ACE_EarPlugs";
-this addItemToUniform "CUP_HandGrenade_RGD5";
-for "_i" from 1 to 2 do {this addItemToUniform "CUP_18Rnd_9x19_Phantom";};
-this addVest "V_Rangemaster_belt";
-this addItemToVest "CUP_HandGrenade_RGD5";
+this forceAddUniform "U_I_C_Soldier_Camo_F";
+for "_i" from 1 to 6 do {this addItemToUniform "ACE_fieldDressing";};
+for "_i" from 1 to 3 do {this addItemToUniform "ACE_morphine";};
+this addVest "V_TacChestrig_oli_F";
 this addBackpack "B_Parachute";
-this addHeadgear "CUP_H_RUS_ZSH_Shield_Up";
+this addHeadgear "H_Cap_headphones";
+this addGoggles "G_Aviator";
 
 comment "Add weapons";
-this addWeapon "CUP_hgun_Phantom";
-this addHandgunItem "CUP_acc_CZ_M3X";
+this addWeapon "hgun_Pistol_01_F";
+this addWeapon "Binocular";
 
 comment "Add items";
 this linkItem "ItemMap";

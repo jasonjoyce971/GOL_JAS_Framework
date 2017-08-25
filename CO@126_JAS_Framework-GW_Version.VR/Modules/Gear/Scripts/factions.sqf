@@ -88,6 +88,38 @@ switch (_side) do {
 	{
 		#include "Classes\CDF-D.sqf";
 	};
+	case "CDF-F":
+	{
+		#include "Classes\CDF-F.sqf";
+	};
+	case "CDF-M":
+	{
+		#include "Classes\CDF-M.sqf";
+	};
+	case "US-OCP":
+	{
+		#include "Classes\US-OCP.sqf";
+	};
+	case "US-UCP":
+	{
+		#include "Classes\US-UCP.sqf";
+	};
+	case "US-R":
+	{
+		#include "Classes\US-R.sqf";
+	};
+	case "SLA":
+	{
+		#include "Classes\SLA.sqf";
+	};
+	case "SYND":
+	{
+		#include "Classes\SYND.sqf";
+	};
+	case "UN":
+	{
+		#include "Classes\UN.sqf";
+	};
 	
 	default {
 		_errorCode = true;

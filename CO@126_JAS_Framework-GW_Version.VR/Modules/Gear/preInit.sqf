@@ -36,6 +36,11 @@ PREP(replaceAttachments);
 			"ACR",
 			"601stSFG",
 			"CDF-D",
+			"CDF-F",
+			"CDF-M",
+			"US-OCP",
+			"US-UCP",
+			"US-R",
 			"SWAT",
 			"INSURGENT-D",
 			"INSURGENT-W",
@@ -53,6 +58,11 @@ PREP(replaceAttachments);
 			"Czech Army",
 			"601st SFG",
 			"CDF-Desert",
+			"CDF-Forest",
+			"CDF-Mountain",
+			"US Army-OCP",
+			"US Army-UCP",
+			"US Army Rangers",
 			"Tanoa SWAT",
 			"INSURGENT-Desert",
 			"INSURGENT-Woodland",
@@ -76,6 +86,7 @@ PREP(replaceAttachments);
 			"RUSSIAN-W",
 			"SPETSNAZ",
 			"TAKIARMY-D",
+			"SLA",
 			"INSURGENT-D",
 			"INSURGENT-W",
 			"CAMPAIGN-E"
@@ -88,6 +99,7 @@ PREP(replaceAttachments);
 			"Russian-Woodland",
 			"Spetsnaz",
 			"Takistani Army-Desert",
+			"Sahrani Liberation Army",
 			"INSURGENT-Desert",
 			"INSURGENT-Woodland",
 			"Campaign-"
@@ -106,6 +118,8 @@ PREP(replaceAttachments);
 		[
 			"AAF-W",
 			"PMC",
+			"SYND",
+			"UN",
 			"INSURGENT-D",
 			"INSURGENT-W",
 			"CAMPAIGN-I"
@@ -113,6 +127,8 @@ PREP(replaceAttachments);
 		[
 			"AAF-Woodland",
 			"PMC",
+			"Syndikat",
+			"United Nations",
 			"INSURGENT-Desert",
 			"INSURGENT-Woodland",
 			"Campaign-"
