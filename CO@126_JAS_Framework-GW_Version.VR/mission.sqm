@@ -8,18 +8,22 @@ class EditorData
 	toggles=577;
 	class ItemIDProvider
 	{
-		nextID=1739;
+		nextID=1805;
+	};
+	class MarkerIDProvider
+	{
+		nextID=1;
 	};
 	class LayerIndexProvider
 	{
-		nextID=852;
+		nextID=857;
 	};
 	class Camera
 	{
-		pos[]={343.10483,34.477497,433.24969};
-		dir[]={0.0039031385,-0.58524758,0.81085426};
-		up[]={0.0028170063,0.81085104,0.58524334};
-		aside[]={0.99999487,8.1658527e-008,-0.0048131128};
+		pos[]={496.40335,34.055779,377.46356};
+		dir[]={-0.79668379,-0.60315442,0.038779471};
+		up[]={-0.60244209,0.79762411,0.029324869};
+		aside[]={0.048618779,5.5053533e-008,0.99881911};
 	};
 };
 binarizationWanted=0;
@@ -191,7 +195,7 @@ class CustomAttributes
 								};
 								class value
 								{
-									items=2;
+									items=3;
 									class Item0
 									{
 										class data
@@ -220,6 +224,20 @@ class CustomAttributes
 											value="gw_gear_opfor";
 										};
 									};
+									class Item2
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="gw_gear_independent";
+										};
+									};
 								};
 							};
 						};
@@ -236,7 +254,7 @@ class CustomAttributes
 								};
 								class value
 								{
-									items=2;
+									items=3;
 									class Item0
 									{
 										class data
@@ -262,7 +280,7 @@ class CustomAttributes
 																"STRING"
 															};
 														};
-														value="SWAT";
+														value="NATO-D";
 													};
 												};
 												class Item1
@@ -307,7 +325,52 @@ class CustomAttributes
 																"STRING"
 															};
 														};
-														value="CSAT-V";
+														value="RUSSIAN-W";
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"SCALAR"
+															};
+														};
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item2
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"ARRAY"
+												};
+											};
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"STRING"
+															};
+														};
+														value="PMC";
 													};
 												};
 												class Item1
@@ -391,7 +454,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=85;
+		items=97;
 		class Item0
 		{
 			dataType="Group";
@@ -1968,7 +2031,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={340,5.8253031,492.49921};
+				position[]={340,5.8253026,492.49899};
 			};
 			side="Empty";
 			flags=4;
@@ -1979,7 +2042,29 @@ class Mission
 			};
 			id=188;
 			type="B_CargoNet_01_ammo_F";
-			atlOffset=4.7683716e-007;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[""arifle_MXC_F"",""arifle_MXM_F"",""arifle_MX_F"",""arifle_MX_GL_F"",""arifle_MX_SW_F"",""arifle_SDAR_F"",""hgun_P07_F"",""hgun_Pistol_heavy_01_F"",""launch_NLAW_F"",""launch_Titan_F"",""launch_Titan_short_F"",""SMG_01_F"",""srifle_EBR_F"",""srifle_LRR_camo_F"",""srifle_LRR_F"",""FirstAidKit"",""Medikit"",""MineDetector""],[4,2,8,4,4,2,2,2,2,2,2,2,2,2,2,10,1,1]],[[""100Rnd_65x39_caseless_mag_Tracer"",""11Rnd_45ACP_Mag"",""16Rnd_9x21_Mag"",""1Rnd_HE_Grenade_shell"",""1Rnd_SmokeBlue_Grenade_shell"",""1Rnd_SmokeGreen_Grenade_shell"",""1Rnd_SmokeOrange_Grenade_shell"",""1Rnd_SmokePurple_Grenade_shell"",""1Rnd_SmokeRed_Grenade_shell"",""1Rnd_SmokeYellow_Grenade_shell"",""1Rnd_Smoke_Grenade_shell"",""20Rnd_556x45_UW_mag"",""20Rnd_762x51_Mag"",""30Rnd_45ACP_Mag_SMG_01"",""30Rnd_556x45_Stanag_red"",""30Rnd_65x39_caseless_mag"",""3Rnd_HE_Grenade_shell"",""7Rnd_408_Mag"",""APERSBoundingMine_Range_Mag"",""APERSMine_Range_Mag"",""APERSTripMine_Wire_Mag"",""ATMine_Range_Mag"",""B_IR_Grenade"",""ClaymoreDirectionalMine_Remote_Mag"",""DemoCharge_Remote_Mag"",""HandGrenade"",""Laserbatteries"",""MiniGrenade"",""SatchelCharge_Remote_Mag"",""SLAMDirectionalMine_Wire_Mag"",""SmokeShell"",""SmokeShellBlue"",""SmokeShellGreen"",""SmokeShellOrange"",""SmokeShellPurple"",""SmokeShellRed"",""SmokeShellYellow"",""Titan_AA"",""Titan_AP"",""Titan_AT"",""UGL_FlareGreen_F"",""UGL_FlareWhite_F""],[16,14,14,15,2,2,2,2,2,2,2,6,24,14,6,52,3,12,5,5,5,5,8,5,5,24,5,24,5,5,2,2,2,2,2,2,2,6,6,6,2,2]],[[""Binocular"",""Laserdesignator"",""Rangefinder"",""acc_flashlight"",""acc_pointer_IR"",""ItemGPS"",""muzzle_snds_acp"",""muzzle_snds_B"",""muzzle_snds_H"",""muzzle_snds_H_SW"",""muzzle_snds_L"",""optic_Aco"",""optic_Aco_smg"",""optic_DMS"",""optic_Hamr"",""optic_Holosight"",""optic_LRPS"",""optic_MRD"",""optic_NVS"",""optic_SOS"",""optic_tws"",""optic_tws_mg"",""ToolKit""],[1,1,1,5,5,5,5,5,5,1,5,2,2,2,2,2,2,2,2,2,2,2,1]],[[],[]]],false]";
+						};
+					};
+				};
+				nAttributes=1;
+			};
 		};
 		class Item24
 		{
@@ -4551,7 +4636,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={304.07715,5.3815289,425.08621};
+				position[]={304.077,5.3815289,425.086};
 				angles[]={0,1.5656651,0};
 			};
 			side="Empty";
@@ -4585,6 +4670,165 @@ class Mission
 				};
 				nAttributes=1;
 			};
+		};
+		class Item85
+		{
+			dataType="Comment";
+			class PositionInfo
+			{
+				position[]={346.29047,5,391.72705};
+			};
+			title="AAC Spawn Tools";
+			description="Automatic spawning of AAC Equipment according to chosen faction";
+			id=1739;
+		};
+		class Item86
+		{
+			dataType="Comment";
+			class PositionInfo
+			{
+				position[]={315.57999,5,378.78101};
+			};
+			title="Initialisers";
+			description="These Objects Initialise the given callsign. Delete the ones you do not want to use. You must change the side to spawn for in the init code. The coices are BLUFOR, OPFOR or INDEP. Consult the wiki for a tutorial.";
+			id=1740;
+		};
+		class Item87
+		{
+			dataType="Comment";
+			class PositionInfo
+			{
+				position[]={378.06699,5,377.53601};
+			};
+			title="Placement Objects";
+			description="These Objects mark where the choppers will spawn.  Copy and paste to place additional choppers. Rotate to the direction you want the chopper to face (Z Rotation Axis).";
+			id=1747;
+		};
+		class Item88
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={378.06662,5,368.78516};
+			};
+			side="Empty";
+			class Attributes
+			{
+				name="Raven";
+			};
+			id=1748;
+			type="Land_HelipadEmpty_F";
+		};
+		class Item89
+		{
+			dataType="Comment";
+			class PositionInfo
+			{
+				position[]={346.30399,5,369.03799};
+			};
+			title="Raven Notes";
+			description="Raven is a light to medium lift transport helicopter that also doubles up as the medical chopper";
+			id=1751;
+		};
+		class Item90
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={316.04001,5,369.147};
+			};
+			side="Empty";
+			class Attributes
+			{
+				init="call{[""BLUFOR""] call GW_AAC_Setup_fnc_spawnRaven;}";
+				name="InitialiseRaven";
+			};
+			id=1776;
+			type="Land_HelipadEmpty_F";
+		};
+		class Item91
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={378.086,5,351.703};
+			};
+			side="Empty";
+			class Attributes
+			{
+				name="Giant";
+			};
+			id=1785;
+			type="Land_HelipadEmpty_F";
+		};
+		class Item92
+		{
+			dataType="Comment";
+			class PositionInfo
+			{
+				position[]={346.32401,5,351.95599};
+			};
+			title="Giant Notes";
+			description="Giant is a medium to heavy lift transport helicopter capable of lifting the entire platoon in one go. It also doubles up as the main cargo chopper, capable of lifting all crates and even some vehicles.";
+			id=1786;
+		};
+		class Item93
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={316.06,5,352.065};
+			};
+			side="Empty";
+			class Attributes
+			{
+				init="call{[""BLUFOR""] call GW_AAC_Setup_fnc_spawnGiant;}";
+				name="InitialiseGiant";
+			};
+			id=1787;
+			type="Land_HelipadEmpty_F";
+		};
+		class Item94
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={378.35699,5,335.09201};
+			};
+			side="Empty";
+			class Attributes
+			{
+				name="Angel";
+			};
+			id=1788;
+			type="Land_HelipadEmpty_F";
+		};
+		class Item95
+		{
+			dataType="Comment";
+			class PositionInfo
+			{
+				position[]={346.595,5,335.345};
+			};
+			title="Angel Notes";
+			description="Angel is a light attack helicopter that specialises in scouting and recon. Usually too weak to stand toe to toe on the front line, Angel relies on speed and agility rather than strength.";
+			id=1789;
+		};
+		class Item96
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={316.33099,5,335.45401};
+			};
+			side="Empty";
+			class Attributes
+			{
+				init="call{[""BLUFOR""] call GW_AAC_Setup_fnc_spawnAngel;}";
+				name="InitialiseAngel";
+			};
+			id=1790;
+			type="Land_HelipadEmpty_F";
 		};
 	};
 };
