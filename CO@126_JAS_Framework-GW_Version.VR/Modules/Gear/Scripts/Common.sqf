@@ -97,11 +97,11 @@ if (GVARMAIN(mod_ACE3_Medical)) then {	// Basic
 		_FAKBig = [
 			[_bandage, 30],
 			["ACE_elasticBandage", 15],
-			["ACE_quikclot", 10],
+			["ACE_packingBandage", 10],
 			["ACE_tourniquet", 4],
 			[_epi, 6],
 			[_morph, 6],
-			["ACE_atropine", 5],
+			["ACE_adenosine", 5],
 			["ACE_salineIV", 5],
 			["ACE_personalAidKit", 5],
 			[_blood, 3]

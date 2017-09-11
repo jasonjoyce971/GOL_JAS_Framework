@@ -258,6 +258,14 @@ if (_isMan) then {
 				[_unit, _bandage, 40] call _fnc_AddObjectsCargo;
 				if (GVARMAIN(mod_ACE3)) then {
 					[_unit, _morph, 20] call _fnc_AddObjectsCargo;
+					if ((EGVAR(Settings_ACE,medical_level) isEqualTo 2) || (ace_medical_level isEqualTo 2)) then {
+						[_unit, "ACE_elasticBandage", 100] call _fnc_AddObjectsCargo;
+						[_unit, "ACE_tourniquet", 50] call _fnc_AddObjectsCargo;
+						[_unit, "ACE_packingBandage", 50] call _fnc_AddObjectsCargo;
+						[_unit, "ACE_adenosine", 50] call _fnc_AddObjectsCargo;
+						[_unit, "ACE_salineIV", 50] call _fnc_AddObjectsCargo;
+						[_unit, "ACE_surgicalKit", 50] call _fnc_AddObjectsCargo;
+					};
 				};
 
 				[_unit, _pistol_mag, 10] call _fnc_AddObjectsCargo;
@@ -293,6 +301,14 @@ if (_isMan) then {
 				[_unit, _bandage, 40] call _fnc_AddObjectsCargo;
 				if (GVARMAIN(mod_ACE3)) then {
 					[_unit, _morph, 20] call _fnc_AddObjectsCargo;
+					if ((EGVAR(Settings_ACE,medical_level) isEqualTo 2) || (ace_medical_level isEqualTo 2)) then {
+						[_unit, "ACE_elasticBandage", 100] call _fnc_AddObjectsCargo;
+						[_unit, "ACE_tourniquet", 50] call _fnc_AddObjectsCargo;
+						[_unit, "ACE_packingBandage", 50] call _fnc_AddObjectsCargo;
+						[_unit, "ACE_adenosine", 50] call _fnc_AddObjectsCargo;
+						[_unit, "ACE_salineIV", 50] call _fnc_AddObjectsCargo;
+						[_unit, "ACE_surgicalKit", 50] call _fnc_AddObjectsCargo;
+					};
 				};
 
 				[_unit, _pistol_mag, 10] call _fnc_AddObjectsCargo;
@@ -331,6 +347,14 @@ if (_isMan) then {
 					[_unit, _morph, 20] call _fnc_AddObjectsCargo;
 					[_unit, _epi, 20] call _fnc_AddObjectsCargo;
 					[_unit, _blood, 10] call _fnc_AddObjectsCargo;
+					if ((EGVAR(Settings_ACE,medical_level) isEqualTo 2) || (ace_medical_level isEqualTo 2)) then {
+						[_unit, "ACE_elasticBandage", 100] call _fnc_AddObjectsCargo;
+						[_unit, "ACE_tourniquet", 50] call _fnc_AddObjectsCargo;
+						[_unit, "ACE_packingBandage", 50] call _fnc_AddObjectsCargo;
+						[_unit, "ACE_adenosine", 50] call _fnc_AddObjectsCargo;
+						[_unit, "ACE_salineIV", 50] call _fnc_AddObjectsCargo;
+						[_unit, "ACE_surgicalKit", 50] call _fnc_AddObjectsCargo;
+					};
 				};
 
 				[_unit, _pistol_mag, 20] call _fnc_AddObjectsCargo;
@@ -367,10 +391,10 @@ if (_isMan) then {
 					if ((EGVAR(Settings_ACE,medical_level) isEqualTo 2) || (ace_medical_level isEqualTo 2)) then {
 						[_unit, "ACE_elasticBandage", 100] call _fnc_AddObjectsCargo;
 						[_unit, "ACE_tourniquet", 50] call _fnc_AddObjectsCargo;
-						[_unit, "ACE_quikclot", 50] call _fnc_AddObjectsCargo;
-						[_unit, "ACE_atropine", 50] call _fnc_AddObjectsCargo;
+						[_unit, "ACE_packingBandage", 50] call _fnc_AddObjectsCargo;
+						[_unit, "ACE_adenosine", 50] call _fnc_AddObjectsCargo;
 						[_unit, "ACE_salineIV", 50] call _fnc_AddObjectsCargo;
-						[_unit, "ACE_surgicalKit", 50] call _fnc_AddObjectsCargo;
+						//[_unit, "ACE_personalAidKit", 50] call _fnc_AddObjectsCargo;
 					};
 				};
 			};

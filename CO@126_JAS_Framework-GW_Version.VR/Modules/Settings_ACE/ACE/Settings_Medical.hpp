@@ -184,7 +184,7 @@ class ace_medical_enableRevive {
 	force = 1;
 };
 class ace_medical_maxReviveTime {
-	value = 120;
+	value = 300;
 	typeName = "SCALAR";
 	force = 1;
 };
