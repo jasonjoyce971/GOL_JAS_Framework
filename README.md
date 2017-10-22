@@ -5,6 +5,7 @@ GOL_JAS_Framework combines the old GOL_Framework and GW_Framework with customise
 * AAC asset spawner complete
 * EOD equipment and role changes implemented
 * Advanced Medical updated to take into account clan testing
+* Added old GOL Framework spawning tools for more refined scripting
 
 # Initial Version 0.1
 Changed from GW-Framework:
