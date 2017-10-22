@@ -154,6 +154,10 @@
 			{
 				GW_AAC_Setup_AngelAirframe = "CUP_B_AH6M_USA";
 			};
+			case "CAMPAIGN-GEORGIA":
+			{
+				GW_AAC_Setup_AngelAirframe = "JAS_CUP_O_Mi24_V_RU";
+			};
 			case "CAMPAIGN-W":
 			{
 				
@@ -191,6 +195,26 @@
 			case "INSURGENT-W":
 			{
 				GW_AAC_Setup_AngelAirframe = "CUP_O_Mi24_D_SLA";
+			};
+			case "CAMPAIGN-601":
+			{
+				GW_AAC_Setup_AngelAirframe = "JAS_CUP_B_Mi35_CZ";
+			};
+			case "CAMPAIGN-AAF":
+			{
+				GW_AAC_Setup_AngelAirframe = "JAS_CUP_I_Mi24_D_UN";
+			};
+			case "CAMPAIGN-RACS":
+			{
+				GW_AAC_Setup_AngelAirframe = "JAS_CUP_I_Mi24_D_UN";
+			};
+			case "CAMPAIGN-CDF":
+			{
+				GW_AAC_Setup_AngelAirframe = "JAS_CUP_I_Mi24_D_UN";
+			};
+			case "CAMPAIGN-ACR":
+			{
+				GW_AAC_Setup_AngelAirframe = "JAS_CUP_I_Mi24_D_UN";
 			};
 			case "CAMPAIGN-I":
 			{
