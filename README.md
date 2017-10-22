@@ -43,9 +43,6 @@ Changed from GW-Framework:
 	  * Royal Army Corps of Sahrani
 	  * Syndikat Paramilitary Drug Cartel
 	  * United Nations
-* AAC Assets now spawned at mission launch according to faction chosen
-* Carrier/LHD Spawner Script added
 * NekoArrows Limited Respawn Script added
 * NekoArrows Optional Script Packages added
-* Jasons 2nd Line Deployment Script added
 * WIKI Tutorials now in production
