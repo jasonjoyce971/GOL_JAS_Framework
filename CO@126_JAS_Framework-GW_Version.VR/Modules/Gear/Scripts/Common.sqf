@@ -126,6 +126,9 @@ _handFlareG = "";
 _handFlareR = "";
 _handFlareW = "";
 _handFlareY = "";
+
+_mine_detector = [["MineDetector",1]];
+
 if (GVARMAIN(mod_ACE3)) then {
 	_barrel = "ACE_SpareBarrel";
 	_cables = "ACE_CableTie";

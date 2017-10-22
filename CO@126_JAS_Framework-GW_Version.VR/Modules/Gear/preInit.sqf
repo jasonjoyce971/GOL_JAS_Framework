@@ -44,7 +44,8 @@ PREP(replaceAttachments);
 			"SWAT",
 			"INSURGENT-D",
 			"INSURGENT-W",
-			"CAMPAIGN-W"
+			"CAMPAIGN-W",
+			"CAMPAIGN-GEORGIA"
 		],
 		[
 			"NATO-Desert",
@@ -66,7 +67,8 @@ PREP(replaceAttachments);
 			"Tanoa SWAT",
 			"INSURGENT-Desert",
 			"INSURGENT-Woodland",
-			"Campaign-"
+			"Campaign-",
+			"Campaign-Georgia"
 		],
 		0
 	],
@@ -89,7 +91,8 @@ PREP(replaceAttachments);
 			"SLA",
 			"INSURGENT-D",
 			"INSURGENT-W",
-			"CAMPAIGN-E"
+			"CAMPAIGN-E",
+			"CAMPAIGN-SEP"
 		],
 		[
 			"CSAT-Hex",
@@ -102,7 +105,8 @@ PREP(replaceAttachments);
 			"Sahrani Liberation Army",
 			"INSURGENT-Desert",
 			"INSURGENT-Woodland",
-			"Campaign-"
+			"Campaign-",
+			"Campaign-Seperatists"
 		],
 		0
 	]
@@ -122,7 +126,12 @@ PREP(replaceAttachments);
 			"UN",
 			"INSURGENT-D",
 			"INSURGENT-W",
-			"CAMPAIGN-I"
+			"CAMPAIGN-I",
+			"CAMPAIGN-ACR",
+			"CAMPAIGN-601",
+			"CAMPAIGN-AAF",
+			"CAMPAIGN-RACS",
+			"CAMPAIGN-CDF"
 		],
 		[
 			"AAF-Woodland",
@@ -131,7 +140,12 @@ PREP(replaceAttachments);
 			"United Nations",
 			"INSURGENT-Desert",
 			"INSURGENT-Woodland",
-			"Campaign-"
+			"Campaign-",
+			"Campaign-Czech Army",
+			"Campaign-601stSFG",
+			"Campaign-AAF",
+			"Campaign-RACS",
+			"Campaign-CDF"
 		],
 		0
 	],

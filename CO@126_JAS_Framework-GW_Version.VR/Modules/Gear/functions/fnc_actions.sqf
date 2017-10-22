@@ -37,3 +37,5 @@ _unit addAction ["Charlie Team > Medium Machine Gunner","[player,'mmg'] call GW_
 _unit addAction ["Echo > Chopper Pilot","[player,'p'] call GW_Gear_Fnc_Handler;",bullShit,5];
 _unit addAction ["Echo > Jet Pilot","[player,'crew'] call GW_Gear_Fnc_Handler;",bullShit,5];
 _unit addAction ["Echo > Jaeger","[player,'marksman'] call GW_Gear_Fnc_Handler;",bullShit,5];
+
+_unit addAction ["Specialist > EOD","[player,'eod'] call GW_Gear_Fnc_Handler;",bullShit,5];

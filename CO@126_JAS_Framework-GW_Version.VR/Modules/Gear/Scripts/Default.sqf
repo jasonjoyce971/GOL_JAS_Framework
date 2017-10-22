@@ -84,6 +84,7 @@ switch (toLower(_role)) do {
 		[_goggles,_helmet,_uniform,_vest] call _addEquipment;
 		[_rifle, _rifle_mag, ""] call _addPrimary;
 		[_pistol, _pistol_mag, ""] call _addHandGun;
+		_mine_detector call _addToUniform;
 		_IFAK call _addToUniform;
 		[[_pistol_mag,2],[_smokegrenadeY,3]] call _addToUniform;
 		[[_grenademini,2],[_grenade,2],[_rifle_mag,4],[_rifle_mag_tr,4]] call _addToVest;
@@ -218,6 +219,20 @@ switch (toLower(_role)) do {
 		};
 		_laserDesignator call _addBino;
 		[_map, _gps, "", _compass, _watch, _nvg] call _addLinkedItems;
+	};
+	
+	case "eod": {
+		[_goggles,_helmet,_uniform,_vest] call _addEquipment;
+		[_rifle, _rifle_mag, ""] call _addPrimary;
+		[_pistol, _pistol_mag, ""] call _addHandGun;
+		_mine_detector call _addToUniform;
+		_IFAK call _addToUniform;
+		[[_pistol_mag,2]] call _addToUniform;
+		[[_grenademini,2],[_grenade,2],[_rifle_mag,4],[_rifle_mag_tr,4],[_smokegrenadeY,3]] call _addToVest;
+		[_map, "", "", _compass, _watch, _nvg] call _addLinkedItems;
+		["","","","",_backpack] call _addEquipment;
+		[[_cables,1],[_defusalKit,1],[_clacker,1],[_demoCharge,2],[_satchelCharge,1]] call _addToBackpack;
+		[_map, "", "", _compass, _watch, _nvg] call _addLinkedItems;
 	};
 
 	default {

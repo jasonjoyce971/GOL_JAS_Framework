@@ -120,7 +120,34 @@ switch (_side) do {
 	{
 		#include "Classes\UN.sqf";
 	};
-	
+	case "CAMPAIGN-601":
+	{
+		#include "Classes\CAMP601stSFG.sqf";
+	};
+	case "CAMPAIGN-AAF":
+	{
+		#include "Classes\CAMPAAF.sqf";
+	};
+	case "CAMPAIGN-RACS":
+	{
+		#include "Classes\CAMPRACS.sqf";
+	};
+	case "CAMPAIGN-CDF":
+	{
+		#include "Classes\CAMPCDF.sqf";
+	};
+	case "CAMPAIGN-GEORGIA":
+	{
+		#include "Classes\CAMPGEO.sqf";
+	};
+	case "CAMPAIGN-SEP":
+	{
+		#include "Classes\CAMPSEP.sqf";
+	};
+	case "CAMPAIGN-ACR":
+	{
+		#include "Classes\CAMPACR.sqf";
+	};
 	default {
 		_errorCode = true;
 		ERROR(FORMAT_1("Faction does not exist: %1", _side));
