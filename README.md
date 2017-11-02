@@ -1,6 +1,17 @@
 # GOL_JAS_Framework
 GOL_JAS_Framework combines the old GOL_Framework and GW_Framework with customised content and tutorial wikis for the mission makers of Guerrillas of Liberation ARMA 3 tactical coop clan. The ultimate objective is to modify GW_Framework to have the old toolset while expanding the content and making the entire process of mission making much easier, particularly for beginners.
 
+# Version 0.1.2
+* Added AAC Asset Detection to custom faction template
+* Added Expanded AAC Roles
+  * Chopper/VTOL Crew
+  * Jet Pilot
+  * Para-Rescueman
+  * Anvil Tank/IFV Crew
+  * Dragon Mortarman
+  * Hunter Recon Marksman
+* Repaired automatic side allocation in spawnList.sqf
+
 # Version 0.1.1
 * AAC asset spawner complete
 * EOD equipment and role changes implemented
