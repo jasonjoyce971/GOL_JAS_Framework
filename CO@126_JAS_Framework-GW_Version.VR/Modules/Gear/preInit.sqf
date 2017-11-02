@@ -12,6 +12,16 @@ GVAR(Index302) = 0;
 GVAR(Stamina) = true;
 GVAR(StaminaCoef) = 0.5;
 
+// AAC Asset Generation Variables
+GVAR(RavenAirframe);
+GVAR(GiantAirframe);
+GVAR(AngelAirframe);
+GVAR(ZeusAirframe);
+GVAR(PhantomAirframe);
+GVAR(BansheeAirframe);
+GVAR(CondorAirframe);
+GVAR(AnvilAirframe);
+
 PREP(actions);
 PREP(getAttachments);
 PREP(getLoadoutClass);

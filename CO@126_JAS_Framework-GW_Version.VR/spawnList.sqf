@@ -102,12 +102,12 @@ Fnc_SpawnUnit = {
 	if (EnemySide == west) then
 	{
 		_unit = "B_Soldier_A_F";
-	}
-	else if (EnemySide == independent) then
+	};
+	if (EnemySide == independent) then
 	{
 		_unit = "I_Soldier_A_F";
-	}
-	else
+	};
+	if (EnemySide == east) then
 	{
 		_unit = "O_Soldier_A_F";
 	};
@@ -172,12 +172,12 @@ Fnc_SpawnGroup = {
 	if (EnemySide == west) then
 	{
 		_unit = "B_Soldier_A_F";
-	}
-	else if (EnemySide == independent) then
+	};
+	if (EnemySide == independent) then
 	{
 		_unit = "I_Soldier_A_F";
-	}
-	else
+	};
+	if (EnemySide == east) then
 	{
 		_unit = "O_Soldier_A_F";
 	};
@@ -306,12 +306,12 @@ Fnc_SpawnBunker = {
 		if (EnemySide == west) then
 		{
 			_unit = "B_Soldier_A_F";
-		}
-		else if (EnemySide == independent) then
+		};
+		if (EnemySide == independent) then
 		{
 			_unit = "I_Soldier_A_F";
-		}
-		else
+		};
+		if (EnemySide == east) then
 		{
 			_unit = "O_Soldier_A_F";
 		};
@@ -357,12 +357,12 @@ Fnc_SpawnVehicle = {
 		if (EnemySide == west) then
 		{
 			_unit = "B_Soldier_A_F";
-		}
-		else if (EnemySide == independent) then
+		};
+		if (EnemySide == independent) then
 		{
 			_unit = "I_Soldier_A_F";
-		}
-		else
+		};
+		if (EnemySide == east) then
 		{
 			_unit = "O_Soldier_A_F";
 		};
@@ -399,12 +399,12 @@ Fnc_SpawnPlane = {
 	if (EnemySide == west) then
 	{
 		_unit = "B_Soldier_A_F";
-	}
-	else if (EnemySide == independent) then
+	};
+	if (EnemySide == independent) then
 	{
 		_unit = "I_Soldier_A_F";
-	}
-	else
+	};
+	if (EnemySide == east) then
 	{
 		_unit = "O_Soldier_A_F";
 	};
@@ -437,12 +437,12 @@ Fnc_StaticWeapon = {
 	if (EnemySide == west) then
 	{
 		_unit = "B_Soldier_A_F";
-	}
-	else if (EnemySide == independent) then
+	};
+	if (EnemySide == independent) then
 	{
 		_unit = "I_Soldier_A_F";
-	}
-	else
+	};
+	if (EnemySide == east) then
 	{
 		_unit = "O_Soldier_A_F";
 	};
@@ -508,12 +508,12 @@ Fnc_Paradrop = {
 		if (EnemySide == west) then
 		{
 			_unit = "B_Soldier_A_F";
-		}
-		else if (EnemySide == independent) then
+		};
+		if (EnemySide == independent) then
 		{
 			_unit = "I_Soldier_A_F";
-		}
-		else
+		};
+		if (EnemySide == east) then
 		{
 			_unit = "O_Soldier_A_F";
 		};

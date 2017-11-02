@@ -18,7 +18,7 @@
 params ["_unit","_role"];
 
 private _radioSmall = ["sl","sm","ftl","r","g","ag","ar","mat","amat","ammg","mmg"];
-private _radioMedium = ["pl","fac","ftl","p","crew","marksman"];
+private _radioMedium = ["pl","fac","ftl","p","crew","marksman","pj","dragon","anvil"];
 
 if (GVARMAIN(mod_TFAR)) then {
 	if ({_x call TFAR_fnc_isRadio} count (items _unit + assignedItems _unit) > 0) then {
@@ -42,7 +42,7 @@ if (GVARMAIN(mod_TFAR)) then {
 	};
 } else {
 	if (GVARMAIN(mod_ACRE)) then {
-		private _radioBP = ["pl","fac","sl","p"];
+		private _radioBP = ["pl","fac","sl","p","pj"];
 		private _time = 1;
 		if ((time < 5) || didJip) then { // For first connection
 			_time = 5;

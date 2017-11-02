@@ -51,7 +51,7 @@ if (GVARMAIN(mod_CTAB)) then {
 
 	if (isPlayer _unit) then {
 		_gps = _Android;
-		if (_role in ["pl","fac","crew","p"]) then {
+		if (_role in ["pl","fac","crew","p","pj","dragon","marksman"]) then {
 			_gps = _cTab;
 		};
 	};
@@ -140,6 +140,7 @@ if (GVARMAIN(mod_ACE3)) then {
 	_rangefinder = "ACE_Vector";
 	_microDAGR = "ACE_DAGR";
 	_rangecard = "ACE_RangeCard";
+	_mortarRangeCard = "ACE_RangeTable_82mm";
 
 	_flashBang = "ACE_M84";
 	_handFlareG = "ACE_HandFlare_Green";

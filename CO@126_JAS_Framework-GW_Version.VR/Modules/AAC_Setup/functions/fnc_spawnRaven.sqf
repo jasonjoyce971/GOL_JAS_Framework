@@ -66,7 +66,7 @@
 			};
 			case "CAMPAIGN-E":
 			{
-				
+				GW_AAC_Setup_RavenAirframe = GW_Gear_RavenAirframe;
 			};
 			default
 			{
@@ -160,7 +160,7 @@
 			};
 			case "CAMPAIGN-W":
 			{
-				
+				GW_AAC_Setup_RavenAirframe = GW_Gear_RavenAirframe;
 			};
 			default
 			{
@@ -218,7 +218,7 @@
 			};
 			case "CAMPAIGN-I":
 			{
-				
+				GW_AAC_Setup_RavenAirframe = GW_Gear_RavenAirframe;
 			};
 			default
 			{
