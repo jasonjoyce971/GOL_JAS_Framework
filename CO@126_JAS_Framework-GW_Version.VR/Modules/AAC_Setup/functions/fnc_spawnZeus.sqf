@@ -66,7 +66,7 @@
 			};
 			case "CAMPAIGN-E":
 			{
-				
+				GW_AAC_Setup_ZeusAirframe = GW_Gear_ZeusAirframe;
 			};
 			default
 			{
@@ -160,7 +160,7 @@
 			};
 			case "CAMPAIGN-W":
 			{
-				
+				GW_AAC_Setup_ZeusAirframe = GW_Gear_ZeusAirframe;
 			};
 			default
 			{
@@ -218,7 +218,7 @@
 			};
 			case "CAMPAIGN-I":
 			{
-				
+				GW_AAC_Setup_ZeusAirframe = GW_Gear_ZeusAirframe;
 			};
 			default
 			{

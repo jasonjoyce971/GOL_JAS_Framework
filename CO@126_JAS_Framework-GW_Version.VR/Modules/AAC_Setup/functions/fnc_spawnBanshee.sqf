@@ -66,7 +66,7 @@
 			};
 			case "CAMPAIGN-E":
 			{
-				
+				GW_AAC_Setup_BansheeAirframe = GW_Gear_BansheeAirframe;
 			};
 			default
 			{
@@ -160,7 +160,7 @@
 			};
 			case "CAMPAIGN-W":
 			{
-				
+				GW_AAC_Setup_BansheeAirframe = GW_Gear_BansheeAirframe;
 			};
 			default
 			{
@@ -218,7 +218,7 @@
 			};
 			case "CAMPAIGN-I":
 			{
-				
+				GW_AAC_Setup_BansheeAirframe = GW_Gear_BansheeAirframe;
 			};
 			default
 			{

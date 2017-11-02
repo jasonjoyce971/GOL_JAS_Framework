@@ -1,3 +1,12 @@
+// AAC Assets
+GW_Gear_AngelAirframe = "";
+GW_Gear_AnvilAirframe = "";
+GW_Gear_BansheeAirframe = "";
+GW_Gear_CondorAirframe = "";
+GW_Gear_GiantAirframe = "";
+GW_Gear_PhantomAirframe = "";
+GW_Gear_RavenAirframe = "";
+GW_Gear_ZeusAirframe = "";
 
 _glHE = "CUP_1Rnd_HE_GP25_M";
 _glsmokeW = "CUP_1Rnd_SMOKE_GP25_M";
