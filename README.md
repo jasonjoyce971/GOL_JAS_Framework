@@ -5,6 +5,7 @@ GOL_JAS_Framework combines the old GOL_Framework and GW_Framework with customise
 * Added Pre-configured initialisation for Nekos script package
 * Fixed AGs not issued packing bandage
 * Fixed 601st SFG faction not recognised
+* Built In Factions WIKI Page Completed
 
 # Version 0.1.2
 * Added AAC Asset Detection to custom faction template
