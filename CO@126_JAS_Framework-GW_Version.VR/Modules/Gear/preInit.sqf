@@ -128,6 +128,10 @@ PREP(replaceAttachments);
 		[
 			"AAF-W",
 			"PMC",
+			"RACS-MTP",
+			"RACS-URB",
+			"RACS-ADPM",
+			"RACS-WDPM",
 			"SYND",
 			"UN",
 			"INSURGENT-D",
@@ -137,6 +141,10 @@ PREP(replaceAttachments);
 		[
 			"AAF-Woodland",
 			"PMC",
+			"Royal Army Corps Sahrani-MTP",
+			"Royal Army Corps Sahrani-Urban",
+			"Royal Army Corps Sahrani-Arid",
+			"Royal Army Corps Sahrani-Woodland",
 			"Syndikat",
 			"United Nations",
 			"INSURGENT-Desert",

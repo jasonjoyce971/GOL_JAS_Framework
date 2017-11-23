@@ -114,7 +114,7 @@
 			{
 				GW_AAC_Setup_AnvilAirframe = "CUP_B_T72_CZ";
 			};
-			case "601stSFG":
+			case "601STSFG":
 			{
 				GW_AAC_Setup_AnvilAirframe = "CUP_B_T72_CZ";
 			};
@@ -179,6 +179,22 @@
 			case "PMC":
 			{
 				GW_AAC_Setup_AnvilAirframe = "CUP_B_M1128_MGS_Woodland";
+			};
+			case "RACS-MTP":
+			{
+				GW_AAC_Setup_RavenAirframe = "CUP_I_M60A3_RACS";
+			};
+			case "RACS-URB":
+			{
+				GW_AAC_Setup_RavenAirframe = "CUP_I_M60A3_RACS";
+			};
+			case "RACS-ADPM":
+			{
+				GW_AAC_Setup_RavenAirframe = "CUP_I_M60A3_RACS";
+			};
+			case "RACS-WDPM":
+			{
+				GW_AAC_Setup_RavenAirframe = "CUP_I_M60A3_RACS";
 			};
 			case "SYND":
 			{

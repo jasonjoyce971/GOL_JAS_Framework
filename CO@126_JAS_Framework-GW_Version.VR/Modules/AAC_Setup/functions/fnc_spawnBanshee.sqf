@@ -114,7 +114,7 @@
 			{
 				GW_AAC_Setup_BansheeAirframe = "JAS_CUP_B_L39_CZ";
 			};
-			case "601stSFG":
+			case "601STSFG":
 			{
 				GW_AAC_Setup_BansheeAirframe = "JAS_CUP_B_L39_CZ";
 			};
@@ -179,6 +179,22 @@
 			case "PMC":
 			{
 				GW_AAC_Setup_BansheeAirframe = "JAS_CUP_I_L39_AAF";
+			};
+			case "RACS-MTP":
+			{
+				GW_AAC_Setup_RavenAirframe = "JAS_CUP_B_F35B_USMC";
+			};
+			case "RACS-URB":
+			{
+				GW_AAC_Setup_RavenAirframe = "JAS_CUP_B_F35B_USMC";
+			};
+			case "RACS-ADPM":
+			{
+				GW_AAC_Setup_RavenAirframe = "JAS_CUP_B_F35B_USMC";
+			};
+			case "RACS-WDPM":
+			{
+				GW_AAC_Setup_RavenAirframe = "JAS_CUP_B_F35B_USMC";
 			};
 			case "SYND":
 			{
