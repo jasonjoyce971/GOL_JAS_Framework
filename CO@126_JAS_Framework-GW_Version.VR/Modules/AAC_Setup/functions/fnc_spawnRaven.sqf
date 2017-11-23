@@ -114,7 +114,7 @@
 			{
 				GW_AAC_Setup_RavenAirframe = "JAS_CUP_B_Mi171Sh_ACR";
 			};
-			case "601stSFG":
+			case "601STSFG":
 			{
 				GW_AAC_Setup_RavenAirframe = "JAS_CUP_B_Mi171Sh_ACR";
 			};
@@ -179,6 +179,22 @@
 			case "PMC":
 			{
 				GW_AAC_Setup_RavenAirframe = "CUP_I_Ka60_GL_Blk_ION";
+			};
+			case "RACS-MTP":
+			{
+				GW_AAC_Setup_RavenAirframe = "JAS_CUP_I_UH60L_RACS";
+			};
+			case "RACS-URB":
+			{
+				GW_AAC_Setup_RavenAirframe = "JAS_CUP_I_UH60L_RACS";
+			};
+			case "RACS-ADPM":
+			{
+				GW_AAC_Setup_RavenAirframe = "JAS_CUP_I_UH60L_RACS";
+			};
+			case "RACS-WDPM":
+			{
+				GW_AAC_Setup_RavenAirframe = "JAS_CUP_I_UH60L_RACS";
 			};
 			case "SYND":
 			{

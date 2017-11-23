@@ -114,7 +114,7 @@
 			{
 				GW_AAC_Setup_CondorAirframe = "CUP_B_C47_USA";
 			};
-			case "601stSFG":
+			case "601STSFG":
 			{
 				GW_AAC_Setup_CondorAirframe = "CUP_B_C47_USA";
 			};
@@ -179,6 +179,22 @@
 			case "PMC":
 			{
 				GW_AAC_Setup_CondorAirframe = "CUP_B_C47_USA";
+			};
+			case "RACS-MTP":
+			{
+				GW_AAC_Setup_RavenAirframe = "CUP_I_C130J_RACS";
+			};
+			case "RACS-URB":
+			{
+				GW_AAC_Setup_RavenAirframe = "CUP_I_C130J_RACS";
+			};
+			case "RACS-ADPM":
+			{
+				GW_AAC_Setup_RavenAirframe = "CUP_I_C130J_RACS";
+			};
+			case "RACS-WDPM":
+			{
+				GW_AAC_Setup_RavenAirframe = "CUP_I_C130J_RACS";
 			};
 			case "SYND":
 			{

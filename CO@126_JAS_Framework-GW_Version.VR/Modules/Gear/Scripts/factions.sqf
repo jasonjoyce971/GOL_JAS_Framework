@@ -120,6 +120,23 @@ switch (_side) do {
 	{
 		#include "Classes\UN.sqf";
 	};
+	
+	case "RACS-MTP":
+	{
+		#include "Classes\RACS-MTP.sqf";
+	};
+	case "RACS-URB":
+	{
+		#include "Classes\RACS-URB.sqf";
+	};
+	case "RACS-ADPM":
+	{
+		#include "Classes\RACS-ADPM.sqf";
+	};
+	case "RACS-WDPM":
+	{
+		#include "Classes\RACS-WDPM.sqf";
+	};
 	default {
 		_errorCode = true;
 		ERROR(FORMAT_1("Faction does not exist: %1", _side));

@@ -114,7 +114,7 @@
 			{
 				GW_AAC_Setup_ZeusAirframe = "JAS_CUP_B_Mi35_CZ";
 			};
-			case "601stSFG":
+			case "601STSFG":
 			{
 				GW_AAC_Setup_ZeusAirframe = "JAS_CUP_B_Mi35_CZ";
 			};
@@ -179,6 +179,22 @@
 			case "PMC":
 			{
 				GW_AAC_Setup_ZeusAirframe = "JAS_CUP_I_Mi24_Mk4_ION";
+			};
+			case "RACS-MTP":
+			{
+				GW_AAC_Setup_RavenAirframe = "CUP_I_AH6J_RACS";
+			};
+			case "RACS-URB":
+			{
+				GW_AAC_Setup_RavenAirframe = "CUP_I_AH6J_RACS";
+			};
+			case "RACS-ADPM":
+			{
+				GW_AAC_Setup_RavenAirframe = "CUP_I_AH6J_RACS";
+			};
+			case "RACS-WDPM":
+			{
+				GW_AAC_Setup_RavenAirframe = "CUP_I_AH6J_RACS";
 			};
 			case "SYND":
 			{
