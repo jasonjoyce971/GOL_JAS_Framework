@@ -89,6 +89,7 @@ if (GVARMAIN(mod_ACE3_Medical)) then {	// Basic
 		_FAKSmall = [
 			[_bandage, 25],
 			["ACE_elasticBandage", 5],
+			["ACE_packingBandage", 5],
 			["ACE_tourniquet", 3],
 			[_morph, 6],
 			[_epi, 6],
