@@ -1,6 +1,11 @@
 # GOL_JAS_Framework
 GOL_JAS_Framework combines the old GOL_Framework and GW_Framework with customised content and tutorial wikis for the mission makers of Guerrillas of Liberation ARMA 3 tactical coop clan. The ultimate objective is to modify GW_Framework to have the old toolset while expanding the content and making the entire process of mission making much easier, particularly for beginners.
 
+# Version 0.1.3
+* Added Pre-configured initialisation for Nekos script package
+* Fixed AGs not issued packing bandage
+* Fixed 601st SFG faction not recognised
+
 # Version 0.1.2
 * Added AAC Asset Detection to custom faction template
 * Added Expanded AAC Roles
