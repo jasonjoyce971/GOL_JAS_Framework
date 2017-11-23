@@ -80,9 +80,9 @@ switch (_side) do {
 	{
 		#include "Classes\ACR.sqf"
 	};
-	case "601stSFG":
+	case "601STSFG":
 	{
-		#include "Classes\601stSFG.sqf";
+		#include "Classes\601STSFG.sqf";
 	};
 	case "CDF-D":
 	{
@@ -119,34 +119,6 @@ switch (_side) do {
 	case "UN":
 	{
 		#include "Classes\UN.sqf";
-	};
-	case "CAMPAIGN-601":
-	{
-		#include "Classes\CAMP601stSFG.sqf";
-	};
-	case "CAMPAIGN-AAF":
-	{
-		#include "Classes\CAMPAAF.sqf";
-	};
-	case "CAMPAIGN-RACS":
-	{
-		#include "Classes\CAMPRACS.sqf";
-	};
-	case "CAMPAIGN-CDF":
-	{
-		#include "Classes\CAMPCDF.sqf";
-	};
-	case "CAMPAIGN-GEORGIA":
-	{
-		#include "Classes\CAMPGEO.sqf";
-	};
-	case "CAMPAIGN-SEP":
-	{
-		#include "Classes\CAMPSEP.sqf";
-	};
-	case "CAMPAIGN-ACR":
-	{
-		#include "Classes\CAMPACR.sqf";
 	};
 	default {
 		_errorCode = true;

@@ -8,7 +8,7 @@ class EditorData
 	toggles=513;
 	class ItemIDProvider
 	{
-		nextID=2178;
+		nextID=2195;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=932;
+		nextID=952;
 	};
 	class Camera
 	{
-		pos[]={353.01953,519.01892,562.07422};
-		dir[]={3.645954e-005,-0.99994999,0.0099997148};
-		up[]={0.0036458508,0.00999978,0.99994338};
-		aside[]={0.99999338,0,-0.0036460331};
+		pos[]={345.87338,596.89825,445.2088};
+		dir[]={-3.598088e-005,-0.99994999,0.0099997157};
+		up[]={-0.0035979874,0.00999978,0.99994355};
+		aside[]={0.99999356,0,0.0035981673};
 	};
 };
 binarizationWanted=0;
@@ -42,13 +42,15 @@ addons[]=
 	"Desert",
 	"A3_Soft_F_Quadbike_01",
 	"ace_repair",
-	"A3_Static_F_Mortar_01"
+	"A3_Static_F_Mortar_01",
+	"A3_Misc_F_Helpers",
+	"CUP_WheeledVehicles_Datsun"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=13;
+		items=15;
 		class Item0
 		{
 			className="A3_Characters_F";
@@ -137,6 +139,18 @@ class AddonsMetaData
 			name="Arma 3 Alpha - Turrets";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
+		};
+		class Item13
+		{
+			className="A3_Misc_F";
+			name="Arma 3 - 3D Aids and Helpers";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item14
+		{
+			className="CUP_WheeledVehicles_Datsun";
+			name="CUP_WheeledVehicles_Datsun";
 		};
 	};
 };
@@ -495,7 +509,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=131;
+		items=148;
 		class Item0
 		{
 			dataType="Group";
@@ -8594,6 +8608,247 @@ class Mission
 			};
 			id=2177;
 			type="B_Mortar_01_F";
+		};
+		class Item131
+		{
+			dataType="Comment";
+			class PositionInfo
+			{
+				position[]={780.45142,5,578.48889};
+			};
+			title="Neko Script Package";
+			description="These triggers are used to initialise Nekos scripts. They can be copied and adjusted to suite your needs. Consult the wiki for a walkthrough";
+			id=2178;
+		};
+		class Item132
+		{
+			dataType="Trigger";
+			position[]={750.44165,5,499.20383};
+			class Attributes
+			{
+				condition="call{!({(isPlayer _x) && ((getPosATL _x) select 2) < 5} count thislist isEqualTo 0) && isServer}";
+				onActivation="call{[[],{ " \n "if (Player getVariable [""NEKY_Respawn_Spectating"",false]) then " \n "{ " \n "[1] execVM ""Scripts\NEKY_Respawn\NEKY_AddLives.sqf""; " \n "}; " \n "}] remoteExec [""BIS_FNC_SPAWN"",0];}";
+				activationBy="ANY";
+				isServerOnly=1;
+			};
+			id=2179;
+			type="EmptyDetector";
+		};
+		class Item133
+		{
+			dataType="Trigger";
+			position[]={603.22699,5,502.54099};
+			angle=0.57627285;
+			class Attributes
+			{
+				condition="call{this}";
+				onActivation="call{[0, true] execVM ""Scripts\NEKY_Respawn\NEKY_RespawnInit.sqf"";}";
+				timeout[]={30,30,30};
+				activationBy="ANY";
+			};
+			id=2180;
+			type="EmptyDetectorAreaR50";
+		};
+		class Item134
+		{
+			dataType="Comment";
+			class PositionInfo
+			{
+				position[]={675.66302,5,498.88699};
+			};
+			title="Limited Respawn";
+			description="These triggers configure the limited respawn system";
+			id=2181;
+		};
+		class Item135
+		{
+			dataType="Comment";
+			class PositionInfo
+			{
+				position[]={607.00403,5,484.255};
+			};
+			title="Limited Respawn Init";
+			description="This trigger should be fired at mission launch to initialise the limited respawn system";
+			id=2182;
+		};
+		class Item136
+		{
+			dataType="Comment";
+			class PositionInfo
+			{
+				position[]={753.85999,5,476.72};
+			};
+			title="Add Lives Trigger";
+			description="This trigger will add a ""life"" to all those currently in spectator, making them respawn";
+			id=2183;
+		};
+		class Item137
+		{
+			dataType="Comment";
+			class PositionInfo
+			{
+				position[]={675.48199,5,387.63699};
+			};
+			title="Mortars";
+			description="This configures the automated mortar system. Place the trigger to start the mortar barrage at the relevant time. You can copy and paste as many times as is needed. Consult the wiki if you need to adjust the mortar settings";
+			id=2184;
+		};
+		class Item138
+		{
+			dataType="Trigger";
+			position[]={677.92657,5,348.78229};
+			class Attributes
+			{
+				condition="call{this}";
+				onActivation="call{null = [Mortar1, west, ""Barrage"", ""Medium"", [""auto"", 30],100,500] execVM ""Scripts\NEKY_Mortars\NEKY_Mortars.sqf"";}";
+				activationBy="ANYPLAYER";
+				isServerOnly=1;
+			};
+			id=2185;
+			type="EmptyDetectorAreaR50";
+		};
+		class Item139
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={698.98059,5.7216258,348.86093};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				name="Mortar1";
+			};
+			id=2186;
+			type="B_Mortar_01_F";
+		};
+		class Item140
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={832.91681,5.3732605,477.98126};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="call{null = [this, ""large"", ""IEDLandSmall_F"", [5, 10]] execVM ""Scripts\NEKY_Mines\NEKY_Mines.sqf"";}";
+			};
+			id=2187;
+			type="Sign_Arrow_F";
+		};
+		class Item141
+		{
+			dataType="Comment";
+			class PositionInfo
+			{
+				position[]={833.10083,5,498.10727};
+			};
+			title="Mines";
+			description="Each object is initialised as an IED or mine. Copy and paste as required. Consult the wiki if you need to adjust the bomb";
+			id=2188;
+		};
+		class Item142
+		{
+			dataType="Comment";
+			class PositionInfo
+			{
+				position[]={833.62079,5,410.02325};
+			};
+			title="Car Bomb";
+			description="Each object is initialised as a car bomb. Copy and paste as required. Consult the wiki if you need to adjust the bomb";
+			id=2189;
+		};
+		class Item143
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={834.28778,6.9999437,376.98346};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="call{Null = [This, ""large"", nil, nil, [false,false,true], 1, [false]] execVM ""Scripts\NEKY_CarBomb\NEKY_CarBomb.sqf"";}";
+			};
+			id=2190;
+			type="CUP_C_Datsun";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[""FirstAidKit""],[4]],[[],[]],[[],[]],[[],[]]],false]";
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item144
+		{
+			dataType="Trigger";
+			position[]={914.88373,5,496.85541};
+			class Attributes
+			{
+				condition="call{this}";
+				onActivation="call{Null = [West,[12314,43569,0],[15521,05352,0],[59532,43290,0],True,""clusterbomb"",30,true,1] execVM ""Scripts\NEKY_BombingRun\NEKY_BombingRun.sqf"" }";
+				activationBy="ANYPLAYER";
+				isServerOnly=1;
+			};
+			id=2191;
+			type="EmptyDetectorAreaR50";
+		};
+		class Item145
+		{
+			dataType="Comment";
+			class PositionInfo
+			{
+				position[]={914.37933,5,516.82477};
+			};
+			title="Bombing Run";
+			description="This will trigger a bombing run. Consult the wiki to adjust the settings as needed. Can be copied, pasted and adjusted multiple times if needed";
+			id=2192;
+		};
+		class Item146
+		{
+			dataType="Trigger";
+			position[]={915.04572,5,345.14041};
+			class Attributes
+			{
+				condition="call{this}";
+				onActivation="call{null = [east, ""O_Heli_Light_02_unarmed_F"", False, ""unload"", ""AirDropSpawn"", ""AirDropTarget"", ""AirDropEgress"", [2,1], [""wp1"",""wp2""]] execVM ""Scripts\NEKY_AirDrop\NEKY_AirDrop.sqf"";}";
+				activationBy="ANYPLAYER";
+				isServerOnly=1;
+			};
+			id=2193;
+			type="EmptyDetectorAreaR50";
+		};
+		class Item147
+		{
+			dataType="Comment";
+			class PositionInfo
+			{
+				position[]={913.90619,5,377.73676};
+			};
+			title="Air Drop";
+			description="Initialises an enemy air mobile reinforcement unit. Can be copied, pasted and adjusted as required. Consult the wiki to adjust the settings as required";
+			id=2194;
 		};
 	};
 };
