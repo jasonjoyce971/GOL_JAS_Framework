@@ -5,8 +5,8 @@ if (hasInterface) then {
     _landcode = {openMap true;[player, systemChat "Pilot: Awaiting coordinates"] onMapSingleClick {[blufor,"","unload",    ["spawn",_pos,"despawn"],"Scripts\NEKY_supply\Supply Box Templates\Medical.sqf",false] execVM "Scripts\NEKY_supply\NEKY_SupplyMapClick.sqf"}};
 	
 	_action = ["Medical Resupply", "Medical Resupply","", {}, _condition] call ace_interact_menu_fnc_createAction;
-	_drop = ["Medical Air Drop", "Medical Air Drop","", _code, _condition] call ace_interact_menu_fnc_createAction;
-	_unload = ["Land and Unload", "Land and Unload","", _landcode, _condition] call ace_interact_menu_fnc_createAction;
+	_drop = ["Airdrop", "Airdrop","Scripts\NEKY_supply\ui\Chute.paa", _code, _condition] call ace_interact_menu_fnc_createAction;
+	_unload = ["Unload", "Unload","Scripts\NEKY_supply\ui\Helli.paa", _landcode, _condition] call ace_interact_menu_fnc_createAction;
 	
     [typeOf player, 1, ["ACE_SelfActions","ACE_Equipment"], _action] call ace_interact_menu_fnc_addActionToClass;
 	[typeOf player, 1, ["ACE_SelfActions","ACE_Equipment","Medical Resupply"], _drop] call ace_interact_menu_fnc_addActionToClass;
