@@ -1,6 +1,6 @@
 if (hasInterface) then {
 	
-    _condition = {player in [w1a,w1a1,w1b1,w1c1,e1a,e1a1,e1b1,e1c1,i1a,i1a1,i1b1,i1c1]}; //<only works MP
+        _condition = {player in [w1a,w1a1,w1b1,w1c1,e1a,e1a1,e1b1,e1c1,i1a,i1a1,i1b1,i1c1]}; //<only works MP
    	_code = {openMap true;[player, systemChat "Pilot: Awaiting coordinates"] onMapSingleClick {[blufor,"","drop",    ["spawn",_pos,"despawn"],"Scripts\NEKY_supply\Supply Box Templates\Resupply.sqf",false] execVM "Scripts\NEKY_supply\NEKY_SupplyMapClick.sqf"}};
 	_landcode = {openMap true;[player, systemChat "Pilot: Awaiting coordinates"] onMapSingleClick {[blufor,"","unload",    ["spawn",_pos,"despawn"],"Scripts\NEKY_supply\Supply Box Templates\Resupply.sqf",false] execVM "Scripts\NEKY_supply\NEKY_SupplyMapClick.sqf"}};
     
@@ -11,7 +11,7 @@ if (hasInterface) then {
 	[typeOf player, 1, ["ACE_SelfActions","ACE_Equipment"], _action] call ace_interact_menu_fnc_addActionToClass;
 	[typeOf player, 1, ["ACE_SelfActions","ACE_Equipment","Resupply"], _drop] call ace_interact_menu_fnc_addActionToClass;
 	[typeOf player, 1, ["ACE_SelfActions","ACE_Equipment","Resupply"], _unload] call ace_interact_menu_fnc_addActionToClass;
-	[typeOf player, 1, ["ACE_SelfActions","ACE_Equipment"],_s] call ace_interact_menu_fnc_addActionToClass;
+
 };
 
 //_condition = {leader (group player) isEqualTo (leader player)};
