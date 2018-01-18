@@ -208,7 +208,7 @@ Switch (_Type) do
 						if (TypeName _BoxCode == "STRING") Then {if (_BoxCode != "") then {[_Box] execVM _BoxCode};} else {[_Box] call _BoxCode};
 					};
 					"Pilot: Supplies Unloaded." remoteExec ["systemChat"];
-					"Pilot: RTB." remoteExec ["systemChat"];
+					
 					DeleteVehicle _Pilot;
 					_Pilot = CreateAgent [_PilotClass, [0,0,0], [], 0, "NONE"];		// Ghetto fix for agent getting stuck on "_Heli Land 'LAND'".
 					_Pilot MoveInDriver _Heli;
@@ -217,6 +217,7 @@ Switch (_Type) do
 					_Pilot setCombatMode "BLUE";
 					_Pilot disableAI "FSM";
 					_Pilot MoveTo (_STD Select 2);
+					"Pilot: RTB." remoteExec ["systemChat"];
 				};
 			} else {
 				deleteVehicle _Helipad;

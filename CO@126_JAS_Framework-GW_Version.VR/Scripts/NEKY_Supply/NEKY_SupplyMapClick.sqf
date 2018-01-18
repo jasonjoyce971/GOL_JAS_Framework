@@ -33,7 +33,7 @@ sleep 0.5;
 
 // Create Marker
 _Marker = CreateMarkerLocal [_Name, (_STDs select 1)];
-_Marker setMarkerTypeLocal "selector_selectedFriendly";
+_Marker setMarkerTypeLocal "selector_selectedMission";
 _Marker setMarkerColorLocal "ColorBlack";
 _Marker SetMarkerTextLocal "Supply Drop";
 _Marker SetMarkerSizeLocal [1,1];
