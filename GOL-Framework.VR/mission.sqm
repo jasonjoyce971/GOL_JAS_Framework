@@ -20,10 +20,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={34.650803,45.786522,32.029884};
-		dir[]={0.014834233,-0.62782657,0.77835882};
-		up[]={0.011963238,0.77827156,0.62779355};
-		aside[]={0.99990922,-1.2829751e-006,-0.019054648};
+		pos[]={326.32077,274.63794,218.76268};
+		dir[]={0.038847875,-0.79428947,0.60648608};
+		up[]={0.050773609,0.60748416,0.79269075};
+		aside[]={0.99804646,-1.7409184e-006,-0.06392733};
 	};
 };
 binarizationWanted=0;
@@ -43,14 +43,13 @@ addons[]=
 	"WW2_Core_c_IF_Gui_c",
 	"Desert",
 	"A3_Soft_F_Kart_Kart_01",
-	"A3_Structures_F_Mil_Helipads",
-	"A3_Static_F_Mortar_01"
+	"A3_Structures_F_Mil_Helipads"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=14;
+		items=13;
 		class Item0
 		{
 			className="A3_Characters_F";
@@ -133,13 +132,6 @@ class AddonsMetaData
 		{
 			className="A3_Soft_F_Kart";
 			name="Arma 3 Karts - Unarmored Land Vehicles";
-			author="Bohemia Interactive";
-			url="https://www.arma3.com";
-		};
-		class Item13
-		{
-			className="A3_Static_F";
-			name="Arma 3 Alpha - Turrets";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
@@ -7225,7 +7217,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=33;
+		items=5;
 		class Item0
 		{
 			dataType="Layer";
@@ -12045,430 +12037,6 @@ class Mission
 			dataType="Comment";
 			class PositionInfo
 			{
-				position[]={319.88907,5,542.6239};
-				angles[]={0,6.2811437,0};
-			};
-			title="AAC Spawn Tools";
-			description="Automatic spawning of AAC Equipment according to chosen faction";
-			id=790;
-		};
-		class Item4
-		{
-			dataType="Comment";
-			class PositionInfo
-			{
-				position[]={269.22742,6.23,517.66687};
-				angles[]={0,6.2811437,0};
-			};
-			title="BLUFOR Initialisers";
-			description="These Objects Initialise the given callsign. Delete the ones you do not want to use. You must change the side to spawn for in the init code. The choices are BLUFOR, OPFOR or INDEP. Consult the wiki for a tutorial.";
-			id=791;
-			atlOffset=1.23;
-		};
-		class Item5
-		{
-			dataType="Comment";
-			class PositionInfo
-			{
-				position[]={413.07629,5,517.71167};
-				angles[]={0,6.2811437,0};
-			};
-			title="Placement Objects";
-			description="These Objects mark where the choppers will spawn.  Copy and paste to place additional choppers. Rotate to the direction you want the chopper to face (Z Rotation Axis).";
-			id=792;
-		};
-		class Item6
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={412.73724,5,499.34518};
-				angles[]={0,6.2811437,0};
-			};
-			side="Empty";
-			class Attributes
-			{
-				name="Raven";
-			};
-			id=793;
-			type="Land_HelipadEmpty_F";
-		};
-		class Item7
-		{
-			dataType="Comment";
-			class PositionInfo
-			{
-				position[]={227.67212,5,501.56796};
-				angles[]={0,6.2811437,0};
-			};
-			title="Raven Notes";
-			description="Raven is a light to medium lift transport helicopter that also doubles up as the medical chopper";
-			id=794;
-		};
-		class Item8
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={267.9794,6.0440001,500.1976};
-				angles[]={0,6.2811432,0};
-			};
-			side="Empty";
-			class Attributes
-			{
-				init="call{[""BLUFOR""] call GW_AAC_Setup_fnc_spawnRaven;}";
-				name="InitialiseRaven";
-			};
-			id=795;
-			type="Land_HelipadEmpty_F";
-			atlOffset=1.0440001;
-		};
-		class Item9
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={412.67847,5,477.36551};
-				angles[]={0,6.2811437,0};
-			};
-			side="Empty";
-			class Attributes
-			{
-				name="Giant";
-			};
-			id=796;
-			type="Land_HelipadEmpty_F";
-		};
-		class Item10
-		{
-			dataType="Comment";
-			class PositionInfo
-			{
-				position[]={227.61401,5,479.5885};
-				angles[]={0,6.2811437,0};
-			};
-			title="Giant Notes";
-			description="Giant is a medium to heavy lift transport helicopter capable of lifting the entire platoon in one go. It also doubles up as the main cargo chopper, capable of lifting all crates and even some vehicles.";
-			id=797;
-		};
-		class Item11
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={267.92142,5.559,478.21863};
-				angles[]={0,6.2811432,0};
-			};
-			side="Empty";
-			class Attributes
-			{
-				init="call{[""BLUFOR""] call GW_AAC_Setup_fnc_spawnGiant;}";
-				name="InitialiseGiant";
-			};
-			id=798;
-			type="Land_HelipadEmpty_F";
-			atlOffset=0.55900002;
-		};
-		class Item12
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={412.57294,5,455.2471};
-				angles[]={0,6.2811437,0};
-			};
-			side="Empty";
-			class Attributes
-			{
-				name="Angel";
-			};
-			id=799;
-			type="Land_HelipadEmpty_F";
-		};
-		class Item13
-		{
-			dataType="Comment";
-			class PositionInfo
-			{
-				position[]={227.50845,5,457.47003};
-				angles[]={0,6.2811437,0};
-			};
-			title="Angel Notes";
-			description="Angel is a light attack helicopter that specialises in scouting and recon. Usually too weak to stand toe to toe on the front line, Angel relies on speed and agility rather than strength.";
-			id=800;
-		};
-		class Item14
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={267.81641,5.3860002,456.09961};
-				angles[]={0,6.2811432,0};
-			};
-			side="Empty";
-			class Attributes
-			{
-				init="call{[""BLUFOR""] call GW_AAC_Setup_fnc_spawnAngel;}";
-				name="InitialiseAngel";
-			};
-			id=801;
-			type="Land_HelipadEmpty_F";
-			atlOffset=0.38600016;
-		};
-		class Item15
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={412.51343,5.0123634,433.50223};
-				angles[]={0,6.2811437,0};
-			};
-			side="Empty";
-			class Attributes
-			{
-				name="Zeus";
-			};
-			id=802;
-			type="Land_HelipadEmpty_F";
-			atlOffset=0.012363434;
-		};
-		class Item16
-		{
-			dataType="Comment";
-			class PositionInfo
-			{
-				position[]={227.44894,5,435.72519};
-				angles[]={0,6.2811437,0};
-			};
-			title="Zeus Notes";
-			description="Zeus is a heavy helicopter gunship that specialises in Close Air Support and tank killing. While capable of recon, Zeus is usually bigger and heavier than Angel and so cannot rely on stealth or speed to gather intel. Instead it relies on punching it's way through defences to gain the intel it needs.";
-			id=803;
-		};
-		class Item17
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={267.75641,5.237,434.35559};
-				angles[]={0,6.2811432,0};
-			};
-			side="Empty";
-			class Attributes
-			{
-				init="call{[""BLUFOR""] call GW_AAC_Setup_fnc_spawnZeus;}";
-				name="InitialiseZeus";
-			};
-			id=804;
-			type="Land_HelipadEmpty_F";
-			atlOffset=0.23699999;
-		};
-		class Item18
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={412.89581,5,413.05234};
-				angles[]={0,6.2811437,0};
-			};
-			side="Empty";
-			class Attributes
-			{
-				name="Phantom";
-			};
-			id=805;
-			type="Land_HelipadEmpty_F";
-		};
-		class Item19
-		{
-			dataType="Comment";
-			class PositionInfo
-			{
-				position[]={227.8313,5,415.27533};
-				angles[]={0,6.2811437,0};
-			};
-			title="Phantom Notes";
-			description="Phantom is a ground strike fighter that specialises in Close Air Support. Capable of carrying a wide array of weapons and providing recon, Phantom is the best CAS platform available but is limited in it's use due to the need for an airstrip.";
-			id=806;
-		};
-		class Item20
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={268.1384,5.0799999,413.90561};
-				angles[]={0,6.2811432,0};
-			};
-			side="Empty";
-			class Attributes
-			{
-				init="call{[""BLUFOR""] call GW_AAC_Setup_fnc_spawnPhantom;}";
-				name="InitialisePhantom";
-			};
-			id=807;
-			type="Land_HelipadEmpty_F";
-			atlOffset=0.079999924;
-		};
-		class Item21
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={412.85742,5,390.75308};
-				angles[]={0,6.2811437,0};
-			};
-			side="Empty";
-			class Attributes
-			{
-				name="Banshee";
-			};
-			id=808;
-			type="Land_HelipadEmpty_F";
-		};
-		class Item22
-		{
-			dataType="Comment";
-			class PositionInfo
-			{
-				position[]={227.79288,5.2082825,392.97607};
-				angles[]={0,6.2811437,0};
-			};
-			title="Banshee Notes";
-			description="Banshee is an Air Superiority Fighter that specialises in killing threats to aircraft. While capable of delivering CAS, Banshees main roles are dogfighting, interception, escorts and hunting air defences. ";
-			id=809;
-			atlOffset=0.20828247;
-		};
-		class Item23
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={268.1004,5,391.60559};
-				angles[]={0,6.2811432,0};
-			};
-			side="Empty";
-			class Attributes
-			{
-				init="call{[""BLUFOR""] call GW_AAC_Setup_fnc_spawnBanshee;}";
-				name="InitialiseBanshee";
-			};
-			id=810;
-			type="Land_HelipadEmpty_F";
-		};
-		class Item24
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={412.32837,5.4610386,355.22827};
-				angles[]={0,6.2811437,0};
-			};
-			side="Empty";
-			class Attributes
-			{
-				name="Condor";
-			};
-			id=811;
-			type="Land_HelipadEmpty_F";
-			atlOffset=0.46103859;
-		};
-		class Item25
-		{
-			dataType="Comment";
-			class PositionInfo
-			{
-				position[]={227.26349,5.8537006,357.4519};
-				angles[]={0,6.2811437,0};
-			};
-			title="Condor Notes";
-			description="Condor is a fixed wing transport craft usually used for parachute insertions. Capable of mass airlift including some vehicles this is the biggest transport asset available. While some are VTOL and capable of operating in the field, most will require a full size dedicated airstrip.";
-			id=812;
-			atlOffset=0.85370064;
-		};
-		class Item26
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={267.57141,5.5360003,356.0806};
-				angles[]={0,6.2811432,0};
-			};
-			side="Empty";
-			class Attributes
-			{
-				init="call{[""BLUFOR""] call GW_AAC_Setup_fnc_spawnCondor;}";
-				name="InitialiseCondor";
-			};
-			id=813;
-			type="Land_HelipadEmpty_F";
-			atlOffset=0.53600025;
-		};
-		class Item27
-		{
-			dataType="Comment";
-			class PositionInfo
-			{
-				position[]={227.72943,6.0080585,318.77576};
-				angles[]={0,6.2811437,0};
-			};
-			title="Anvil Notes";
-			description="Anvil is the AAC tank asset and is designed to deliver heavy fire support and AT capability in those missions where aircraft are not featured. While Anvil is tough it is hopeless against OPFOR AT weapons and will require close cooperation with the infantry to succeed.";
-			id=814;
-			atlOffset=1.0080585;
-		};
-		class Item28
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={268.03741,6.4159999,317.40561};
-				angles[]={0,6.2811432,0};
-			};
-			side="Empty";
-			class Attributes
-			{
-				init="call{[""BLUFOR""] call GW_AAC_Setup_fnc_spawnAnvil;}";
-				name="InitialiseAnvil";
-			};
-			id=815;
-			type="Land_HelipadEmpty_F";
-			atlOffset=1.4159999;
-		};
-		class Item29
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={412.79395,5,316.55276};
-				angles[]={0,6.2811437,0};
-			};
-			side="Empty";
-			class Attributes
-			{
-				name="Anvil";
-			};
-			id=816;
-			type="Land_HelipadEmpty_F";
-		};
-		class Item30
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={286.71967,5.7216258,542.76947};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-			};
-			id=835;
-			type="B_Mortar_01_F";
-		};
-		class Item31
-		{
-			dataType="Comment";
-			class PositionInfo
-			{
 				position[]={5.1841617,5,13.752621};
 				angles[]={-0,6.2811437,0};
 			};
@@ -12476,7 +12044,7 @@ class Mission
 			description="Special Purpose SWAT Supply Box. Delete if not using Tanoa Gendermerie SWAT Faction";
 			id=851;
 		};
-		class Item32
+		class Item4
 		{
 			dataType="Object";
 			class PositionInfo

@@ -18,4 +18,4 @@
 //	#include "Respawn\Module.hpp"
 //	#include "SetDifficulty_Legacy\Module.hpp"
 //	#include "VCOMAI\Module.hpp"
-	#include "AAC_Setup\Module.hpp"
+//	#include "AAC_Setup\Module.hpp"
