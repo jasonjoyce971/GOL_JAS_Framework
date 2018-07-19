@@ -17,7 +17,7 @@ if (_role in ["fac","sl","ftl","jtac","pl"]) then {
 if (_role isEqualTo "g") then {
 	_vest = "CUP_V_BAF_Osprey_Mk4_MTP_Grenadier";
 };
-if (_role isEqualTo "jetp") then {
+if (_role isEqualTo "crew") then {
 	_goggles = "";
 	_helmet = "RHS_jetpilot_usaf";
 	_uniform = "U_I_pilotCoveralls";
@@ -33,14 +33,6 @@ if (_role isEqualTo "p") then {
 if (_role isEqualTo "marksman") then {
 	_uniform = "CUP_U_B_BAF_MTP_S5_UnRolled";
 	_vest = "CUP_V_BAF_Osprey_Mk4_MTP_SquadLeader";
-};
-if (_role isEqualTo "crew") then {
-	_helmet = "CUP_H_BAF_Crew_Helmet_MTP";
-};
-if (_role isEqualTo "uav") then {
-	_backpack = "B_UAV_01_backpack_F";
-	_gps = "B_UAVTerminal";
-
 };
 
 _silencer = "rhsusf_acc_nt4_tan";

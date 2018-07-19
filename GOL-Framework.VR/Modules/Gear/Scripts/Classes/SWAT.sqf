@@ -6,7 +6,7 @@ _vest = "V_TacVest_gen_F";
 _backpack = "B_AssaultPack_blk";
 _backpackRadio = _backpack;
 if (GVARMAIN(mod_TFAR)) then {
-	_backpackRadio = "tf_rt1523g_black";
+	_backpackRadio = "tf_bussole";
 };
 
 if (_role in ["ag","ammg"]) then {
@@ -64,9 +64,4 @@ if (_role isEqualTo "r") then {
 	_rifle_mag_tr = "rhsusf_mag_10Rnd_STD_50BMG_M33";
 	_pistol = ["CUP_hgun_MicroUzi", "CUP_muzzle_snds_MicroUzi", "", "", ""];
 	_pistol_mag = "CUP_30Rnd_9x19_UZI";
-};
-if (_role isEqualTo "uav") then {
-	_backpack = "B_UAV_01_backpack_F";
-	_gps = "B_UAVTerminal";
-
 };

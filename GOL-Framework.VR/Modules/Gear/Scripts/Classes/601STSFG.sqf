@@ -11,7 +11,7 @@ if (GVARMAIN(mod_TFAR)) then {
 if (_role in ["ag","ammg"]) then {
 	_backpack = "B_Carryall_cbr";
 };
-if (_role isEqualTo "jetp") then {
+if (_role isEqualTo "crew") then {
 	_goggles = "";
 	_helmet = "CUP_H_RUS_ZSH_Shield_Up";
 	_uniform = "U_I_pilotCoveralls";
@@ -29,15 +29,6 @@ if (_role isEqualTo "marksman") then {
 	_helmet = "rhsusf_ach_helmet_M81";
 	_uniform = "CUP_U_B_CZ_WDL_TShirt";
 	_vest = "CUP_V_CDF_6B3_3_MNT";
-};
-if (_role isEqualTo "crew") then {
-	_helmet = "rhsusf_cvc_green_alt_helmet";
-	_vest = "CUP_V_CDF_6B3_2_MNT";
-};
-if (_role isEqualTo "uav") then {
-	_backpack = "B_UAV_01_backpack_F";
-	_gps = "B_UAVTerminal";
-
 };
 
 _silencer = "rhsusf_acc_nt4_black";

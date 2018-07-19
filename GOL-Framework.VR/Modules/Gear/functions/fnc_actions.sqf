@@ -46,11 +46,13 @@ _unit addAction ["Special > Medium Machine Gunner","[player,'mmg'] call GW_Gear_
 
 _unit addAction ["Special > Diver","[player,'diver'] call GW_Gear_Fnc_Handler;",bullShit,4];
 _unit addAction ["Special > UAV Operator","[player,'uav'] call GW_Gear_Fnc_Handler;",bullShit,4];
+_unit addAction ["Special > JTAC","[player,'jtac'] call GW_Gear_Fnc_Handler;",bullShit,4];
 
 _unit addAction ["Echo > Chopper Pilot","[player,'p'] call GW_Gear_Fnc_Handler;",bullShit,4];
 _unit addAction ["Echo > Para-Rescueman","[player,'pj'] call GW_Gear_Fnc_Handler;",bullShit,4];
 
 _unit addAction ["Echo Special > Jet Pilot","[player,'jetp'] call GW_Gear_Fnc_Handler;",bullShit,4];
-_unit addAction ["Echo Special > Vehicle Crew","[player,'crew'] call GW_Gear_Fnc_Handler;",bullShit,4];
+_unit addAction ["Echo Special > Veh. Crew Mechanic","[player,'crew'] call GW_Gear_Fnc_Handler;",bullShit,4];
+_unit addAction ["Echo Special > Veh. Crew Engineer","[player,'sapper'] call GW_Gear_Fnc_Handler;",bullShit,4];
 _unit addAction ["Echo Special > Dragon","[player,'dragon'] call GW_Gear_Fnc_Handler;",bullShit,4];
 _unit addAction ["Echo Special > Marksman","[player,'marksman'] call GW_Gear_Fnc_Handler;",bullShit,4];
