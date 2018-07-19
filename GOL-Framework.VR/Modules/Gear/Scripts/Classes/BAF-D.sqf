@@ -18,7 +18,7 @@ if (_role isEqualTo "g") then {
 if (_role in ["ag","ammg"]) then {
 	_backpack = "B_Carryall_mcamo";
 };
-if (_role isEqualTo "jetp") then {
+if (_role isEqualTo "crew") then {
 	_goggles = "G_Aviator";
 	_helmet = "RHS_jetpilot_usaf";
 	_uniform = "U_I_pilotCoveralls";
@@ -36,14 +36,6 @@ if (_role isEqualTo "marksman") then {
 	_helmet = "H_Booniehat_mcamo";
 	_uniform = "CUP_U_B_BAF_MTP_S6_UnRolled";
 	_vest = "CUP_V_BAF_Osprey_Mk4_MTP_SquadLeader";
-};
-if (_role isEqualTo "crew") then {
-	_helmet = "CUP_H_BAF_Crew_Helmet_MTP";
-};
-if (_role isEqualTo "uav") then {
-	_backpack = "B_UAV_01_backpack_F";
-	_gps = "B_UAVTerminal";
-
 };
 
 _silencer = "CUP_acc_sffh";

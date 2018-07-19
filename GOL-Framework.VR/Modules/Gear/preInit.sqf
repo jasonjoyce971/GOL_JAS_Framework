@@ -19,6 +19,16 @@ GVAR(Index302) = 0;
 GVAR(Stamina) = true;
 GVAR(StaminaCoef) = 0.5;
 
+// AAC Asset Generation Variables
+GVAR(RavenAirframe);
+GVAR(GiantAirframe);
+GVAR(AngelAirframe);
+GVAR(ZeusAirframe);
+GVAR(PhantomAirframe);
+GVAR(BansheeAirframe);
+GVAR(CondorAirframe);
+GVAR(AnvilAirframe);
+
 [
 	QGVAR(Blufor), "LIST",
 	["Loadout Blufor", "Loadout for Blufor units"],
@@ -44,7 +54,7 @@ GVAR(StaminaCoef) = 0.5;
 			"SWAT",
 			"INSURGENT-D",
 			"INSURGENT-W",
-			"CUSTOM-W"
+			"CAMPAIGN-W"
 		],
 		[
 			"NATO-Desert",
@@ -66,7 +76,7 @@ GVAR(StaminaCoef) = 0.5;
 			"Tanoa SWAT",
 			"INSURGENT-Desert",
 			"INSURGENT-Woodland",
-			"Custom-"
+			"Campaign-"
 		],
 		0
 	], CBA_SERVEROVERWRITE
@@ -88,7 +98,7 @@ GVAR(StaminaCoef) = 0.5;
 			"SLA",
 			"INSURGENT-D",
 			"INSURGENT-W",
-			"CUSTOM-E"
+			"CAMPAIGN-E"
 		],
 		[
 			"CSAT-Hex",
@@ -101,7 +111,7 @@ GVAR(StaminaCoef) = 0.5;
 			"Sahrani Liberation Army",
 			"INSURGENT-Desert",
 			"INSURGENT-Woodland",
-			"Custom-"
+			"Campaign-"
 		],
 		0
 	]
@@ -124,7 +134,7 @@ GVAR(StaminaCoef) = 0.5;
 			"UN",
 			"INSURGENT-D",
 			"INSURGENT-W",
-			"CUSTOM-I"
+			"CAMPAIGN-I"
 		],
 		[
 			"AAF-Woodland",
@@ -137,7 +147,7 @@ GVAR(StaminaCoef) = 0.5;
 			"United Nations",
 			"INSURGENT-Desert",
 			"INSURGENT-Woodland",
-			"Custom-"
+			"Campaign-"
 		],
 		0
 	],CBA_SERVEROVERWRITE

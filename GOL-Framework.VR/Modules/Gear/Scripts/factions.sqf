@@ -6,8 +6,14 @@ switch (_side) do {
 	case "BAF-D": {
 		#include "Classes\BAF-D.sqf"
 	};
-	case "BAF-W": {
-		#include "Classes\BAF-W.sqf"
+	case "CAMPAIGN-E": {
+		#include "Classes\CAMPAIGN-E.sqf"
+	};
+	case "CAMPAIGN-I": {
+		#include "Classes\CAMPAIGN-I.sqf"
+	};
+	case "CAMPAIGN-W": {
+		#include "Classes\CAMPAIGN-W.sqf"
 	};
 	case "CIVI-ALTIS": {
 		#include "Classes\CIVI-ALTIS.sqf"
@@ -26,15 +32,6 @@ switch (_side) do {
 	};
 	case "CSAT-U": {
 		#include "Classes\CSAT-U.sqf"
-	};
-	case "CUSTOM-E": {
-		#include "Classes\CUSTOM-E.sqf"
-	};
-	case "CUSTOM-I": {
-		#include "Classes\CUSTOM-I.sqf"
-	};
-	case "CUSTOM-W": {
-		#include "Classes\CUSTOM-W.sqf"
 	};
 	case "INSURGENT-D": {
 		#include "Classes\INSURGENT-D.sqf"
@@ -64,15 +61,16 @@ switch (_side) do {
 		#include "Classes\USMC-W.sqf"
 	};
 	
-	// Expanded Factions
 	case "CSAT-V":
 	{
 		#include "Classes\CSAT-V.sqf"
 	};
+	
 	case "SWAT":
 	{
 		#include "Classes\SWAT.sqf"
 	};
+	
 	case "SPETSNAZ":
 	{
 		#include "Classes\Spetsnaz.sqf"
@@ -150,7 +148,6 @@ switch (_side) do {
 	{
 		#include "Classes\RACS-WDPM.sqf";
 	};
-	
 	default {
 		_errorCode = true;
 		ERROR(FORMAT_1("Faction does not exist: %1", _side));

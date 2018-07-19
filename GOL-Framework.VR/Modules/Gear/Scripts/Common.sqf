@@ -11,6 +11,7 @@ _smokegrenadeO = "SmokeShellOrange";
 _smokegrenadeP = "SmokeShellPurple";
 _smokegrenadeR = "SmokeShellRed";
 _smokegrenadeY = "SmokeShellYellow";
+_irBeacon = "B_IR_Grenade";
 
 _chemB = "Chemlight_blue";
 _chemG =  "Chemlight_green";
@@ -55,7 +56,7 @@ if (GVARMAIN(mod_CTAB)) then {
 			_gps = _Android;
 		};
 
-		if (_role in ["pl","fac","crew","p","pj","dragon","marksman"]) then {
+		if (_role in ["pl","fac","p","pj","dragon","marksman","jtac"]) then {
 			_gps = _cTab;
 		};
 	};
